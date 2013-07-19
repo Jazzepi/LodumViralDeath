@@ -211,24 +211,24 @@
 #prec 10
 #mapmove 1
 #ap 7
-#poisoncloud 20
-#descr "Smokestacks were named by the first victims of the Allspawn, the Tarum. Those native lizards, now literally subsumed into the great body of the Allspawn, choked to death on the toxic fumes that poured forth from the Smokestack’s single, hollow pillar of flesh. Smokestacks are grown by the Childern of the Allspawn and require rare ingredients from a number of plants, animals, and magical sources. This makes this both expensive, and slow, to produce. A single Smokestack can turn the tide of a battle, spreading a swath of poisonous decay that leaves the enemy breathless.  Despite their terrible power, Smokestacks are physically weak creatures with little ability for direct confrontation. When they do find themselves in combat, they fight with a set of thick, black tentacles that leech life from all those they touch."
+#poisoncloud 25
+#descr "Smokestacks were named by the first victims of the Allspawn, the Tarum. Those native lizards, now literally subsumed into the great body of the Allspawn, choked to death on the toxic fumes that poured forth from the Smokestack’s single, hollow pillar of flesh. Smokestacks are grown by the Childern of the Allspawn and require rare ingredients from a number of plants, animals, and magical sources. This makes them both expensive and slow to produce. A single Smokestack can turn the tide of a battle, spreading a swath of poisonous decay that leaves the enemy breathless.  Despite their terrible power, Smokestacks are physically weak creatures with little ability for direct confrontation. When they do find themselves in combat, they fight with a set of thick, black tentacles that leech life from all those they touch."
 #end
 
 #newmonster 2602
 #copystats 2500
 #copyspr 483
 #name "Goomba"
+#mor 30
 #diseasecloud 2
 #weapon 701
-#armor "Shield of Flesh"
 #gcost 7
 #rcost 2
 #str 8
 #size 1
 #hp 9
-#def 14
-#att 10
+#def 11
+#att 8
 #perc 10
 #ap 13
 #descr "Goombas are small, vaguely humanoid creatures constructed from the body parts of fallen enemies.  They are stitched together en mass in the temples of the great Lodum and blessed with new life by an injection of organic matter from a priest’s body. From this small injection spreads the terrible gift of the Allspawn. Goombas fight by overwhelming their opponents with sharp stabs of their injector spikes. They are nearly fearless being so possessed by the spirit of the Allspawn that they will fight to the last. As a matter of course, fallen Goombas are recovered from the battlefield only to be recycled back into more warriors for new legions in service to Lodum."
@@ -250,7 +250,7 @@
 #att 10
 #perc 10
 #ap 13
-#descr "Clattering Shamblers are called such because of the terrible racket they make as they lope forward towards the enemy. Most of Lodum’s troops simply obscure the use of armor, but Shamblers wear various pieces of mismatched gear from fallen opponents. It provides a modicum of protection to the creature beneath the metal veil, which combined with its natural regenerative abilities, can make all the difference when closing the gap to opposing archers. Shamblers are created from rotting organic material. They have no true form, as often leaving behind a patch of themselves on the battlefield, as growing new appendages from fresh organic matter scavenged from fallen warriors. Other nations tell tales of putting Shamblers to the sword, and finding their fallen comrades among the mix of foul smelling rot."
+#descr "Clattering Shamblers are called such because of the terrible racket they make as they lope forward towards the enemy. Most of Lodum’s troops simply neglect armor, but Shamblers wear various pieces of mismatched gear from fallen opponents. It provides a modicum of protection to the creature beneath the metal veil, which combined with its natural regenerative abilities, can make all the difference when closing the gap to the enemy. Shamblers are created from rotting organic material. They have no true form, as often leaving behind a patch of themselves on the battlefield, as growing new appendages from fresh organic matter scavenged from fallen warriors. Other nations tell tales of putting Shamblers to the sword, and finding their fallen comrades among the mix of foul smelling rot."
 #end
 
 #newmonster 2604
@@ -358,14 +358,15 @@
 #weapon 701
 #noleader
 #gcost 40
-#stealthy 10
+#stealthy 30
 #assassin
-#hp 20
+#mor 14
+#hp 25
 #str 13
-#def 10
+#def 12
 #att 12
 #ambidextrous 2
-#mr 12
+#mr 15
 #ap 12
 #fear 0
 #diseasecloud 4
@@ -421,7 +422,6 @@
 
 #newmonster 2611
 #copystats 2500
-
 #name "Cultivated Brain-Mass"
 #noleader
 #size 3
@@ -429,11 +429,13 @@
 #spr2 "./LodumViralDeath/cultivatedBrainMass2.tga"
 #gcost 40
 #weapon 86
-#custommagic 2048 10
-#onebattlespell "Communion Slave"
-#researchbonus 2
+#weapon 86
+#weapon 346
+#att 6
+#onebattlespell 636
+#magicskill 4 1
 #noitem
-#descr "Humanoids submitted to the meat factories of Lodum often have their brains removed as the first step in processing.  This grey matter is collected in huge vats, and then mingled with crushed dust obtained by grinding down astral gems that naturally extrude from the Allspawn’s many orifices. Once so prepared, the brain matter is placed into a cylindrical metal container about the size of a small humanoid. Two of the hollowed out meatlings that were not processed for parts are then assigned to the container, and cart it from battle to battle. The mixture of thinking flesh is so blessed by the infusion of astral gems that it can be used as a focus by friendly astral mages. Each Brain-Mass contributes the equivalent of one mage to a communion without any actual spells being cast on its part."
+#descr "Humanoids submitted to the meat factories of Lodum often have their brains removed as the first step in processing.  This grey matter is collected in huge vats, and then mingled with crushed dust obtained by grinding down astral gems that naturally extrude from the Allspawn’s many orifices. Once so prepared, the brain matter is placed into a cylindrical metal container about the size of a small humanoid. Two of the hollowed out meatlings that were not processed for parts are then assigned to the container, and cart it from battle to battle. Once so combined the thinking flesh of a hundred victims can cast minor astral spells and lash out at the minds of other living beings."
 #end
 
 #newmonster 2612
