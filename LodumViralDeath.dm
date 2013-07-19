@@ -483,6 +483,88 @@
 
 -- Pretender Gods
 
+-- Lady of Springs
+#newmonster 2701
+#copystats 1370
+#copyspr 1370
+#restrictedgod 85
+#gcost 0
+#magicskill 2 1
+#pathcost 80
+#forestsurvival
+#healer 50
+#heal
+#descr "The Lady of Springs is a divine being sprung from the spring of a mighty river. She claims dominion over the forest springs and everything living in them. While powerful in the paths of Water and Nature, her reclusive nature has limited her skills in other forms of magic. She can draw from the magic of all springs and gets two gems of Water magic each month, and is adept at healing."
+#end
+
+--Divine Serpent
+#newmonster 2702
+#copystats 779
+#copyspr 779
+#restrictedgod 85
+#magicskill 6 4
+#gcost 25
+#startdom 4
+#end
+
+--Monolith
+#newmonster 2704
+#copystats 657
+#copyspr 657
+#restrictedgod 85
+#gemprod 6 2
+#descr "The Monolith is a powerful spirit inhabiting a huge standing stone. The spirit cannot leave the Monolith, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion and it is also magically powerful. In physical battle, the stone would be difficult to destroy, even though it cannot strike back. Each month, priests of the Spirit gather for ceremonies of the seasons, generating nature gems."
+#end
+
+--Mother of Monsters
+#newmonster 2705
+#copystats 157
+#copyspr 157
+#restrictedgod 85
+#gcost 75
+#domsummon2 466
+#end
+
+--Lord of Rebirth
+#newmonster 2706
+#copystats 1371
+#copyspr 1371
+#restrictedgod 85
+#gemprod 6 1
+#gemprod 5 1
+#gcost 100
+#descr "The Lord of Rebirth is a giant of Divine heritage. He claims dominion over cycles of growth, death, and rebirth. On his head he wears a calathos from which olive leaves sprout along with gems of nature and death."
+#spreaddom 2
+#end
+
+--Mother of Serpents
+#newmonster 2707
+#copystats 1348
+#copyspr 1348
+#restrictedgod 85
+#gcost 100
+#summon5 403
+#descr "The Mother of Serpents is a being with impressive healing powers. She can heal battle afflictions from all troops in a province. In combat she is always accompanied by a handful of snakes, two of which she holds in her hands to attack enemies. Horned serpents are drawn to the province in which she dwells."
+#magicskill 5 2
+#att 15
+#def 13
+#spreaddom 2
+#end
+
+--Father of Serpents
+#newmonster 2708
+#copystats 603
+#copyspr 603
+#restrictedgod 85
+#selectmonster
+#gcost 100
+#magicskill 5 2
+#att 16
+#def 15
+#summon5 403
+#descr "The Father of Serpents is a huge, serpent-headed being born deep in a forlorn jungle. Serpents will come to his aid and he is skilled in Nature and Death magic. The Father of Serpents is a mighty warrior armed with an enchanted snake staff."
+#spreaddom 2
+#end
 
 -- Start sites
 #newsite 890
@@ -546,3 +628,5 @@
 #defaultfort 26
 #mountainfort 32
 #forestfort 7
+
+#end
