@@ -182,7 +182,7 @@
 #gcost 140
 #rcost 20
 #size 6
-#hp 90
+#hp 60
 #mr 14
 #str 25
 #att 8
