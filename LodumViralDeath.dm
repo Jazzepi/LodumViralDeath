@@ -172,7 +172,8 @@
 
 #newmonster 2600
 #copystats 2500
-#copyspr 408
+#spr1 "./LodumViralDeath/slimeball1.tga"
+#spr2 "./LodumViralDeath/slimeball2.tga"
 #diseasecloud 2
 #name "Slime Ball"
 #mindless
@@ -191,6 +192,11 @@
 #mapmove 3
 #ap 16
 #descr "Slime Balls are crafted directly by the Allspawn in cavities located throughout its body. At any one time up to a dozen Slime Balls may be growing inside of the massive Allspawn. To produce these green, gooey masses of death the Allspawn consumes fresh organic matter. After digestion, it then compresses that flesh down into a hollow cavity roughly the size of a large chariot. After several days of adding new material, the Allspawn implants a small bit of its essence into the ball which gives it the spark of life it needs to move. Finally, the Allspawn regurgitates it onto land. From there it joins the endless hordes of Lodum."
+#end
+
+#newmonster 2655
+#copystats 1555
+#copyspr 1555
 #end
 
 #newmonster 2601
@@ -217,7 +223,8 @@
 
 #newmonster 2602
 #copystats 2500
-#copyspr 483
+#spr1 "./LodumViralDeath/goomba1.tga"
+#spr2 "./LodumViralDeath/goomba2.tga"
 #name "Goomba"
 #mor 30
 #diseasecloud 2
@@ -481,6 +488,11 @@
 #mor 50
 #end
 
+#newmonster 2615
+#copystats 2500
+#name "Slug: The Allspawn's Bride"
+#end
+
 -- Pretender Gods
 
 -- Lady of Springs
@@ -590,11 +602,11 @@
 --Nation Building Time
 
 #selectnation 85
+#clearnation
+#clearrec
 #name "Lodum"
 #epithet "Viral Death"
 #era 3
-#clearnation
-#clearrec
 #startcom "Sentient Mass"
 #startscout "Vile Stalker"
 #startunittype1 "Clattering Shambler"
@@ -606,6 +618,7 @@
 #startsite "Putrid Pit of Filth"
 #startsite "Spawning Pool"
 #color .8 1 .1
+#flag "LodumViralDeath/flag.tga"
 
 -- Adding units
 #addrecunit "Goomba"
@@ -614,6 +627,7 @@
 #addrecunit "Congealed Mass"
 #addrecunit "Herald of the Allspawn"
 #addrecunit "Smokestack"
+#addrecunit 2655
 -addrecunit "Lobotomized Thrall"
 #addreccom "Sentient Mass"
 #addreccom "Cultivated Brain-Mass"
@@ -622,6 +636,8 @@
 #addreccom "Child of the Allspawn"
 -addreccom "Crest of the Allspawn"
 
+-- Add heroes
+#hero1 "Slug: Allspawn's Bride"
 
 --Set what forts they will use.
 #startfort 5
