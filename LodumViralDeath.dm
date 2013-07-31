@@ -568,7 +568,6 @@
 #copystats 603
 #copyspr 603
 #restrictedgod 85
-#selectmonster
 #gcost 100
 #magicskill 5 2
 #att 16
@@ -577,6 +576,33 @@
 #descr "The Father of Serpents is a huge, serpent-headed being born deep in a forlorn jungle. Serpents will come to his aid and he is skilled in Nature and Death magic. The Father of Serpents is a mighty warrior armed with an enchanted snake staff."
 #spreaddom 2
 #end
+
+--Covus, Necromancer Enthroned
+#newmonster 2709
+#name "Covus, Necromancer Enthroned"
+#spr1 "./LodumViralDeath/enthronedNecromancer1.tga"
+#spr2 "./LodumViralDeath/enthronedNecromancer2.tga"
+#restrictedgod 85
+#hp 40
+#str 26
+#mounted
+#enc 2
+#gcost 40
+#swampsurvival
+#size 5
+#magicskill 4 3
+#magicskill 5 2
+#pathcost 25
+#fear 0
+#entangle
+#neednoteat
+#poisonres 100
+#heal
+#descr "Covus lead the necromancers' successful plot to enslave the Allspawn. After dominating the Allspawn with great magic, Covus turned against his fellows, and had them dipped in slime while still alive. For many years he ruled Lodum from his stolen throne, but the Allspawn's tainted influence flowed back to Covus's through his bond with the otherworldy creature. No one knows if he still commands the Allspawn, or if the Allspawn commands him, but Covus continues to sit on his throne, and never leaves. It shambles from place to place. Covus is a skilled mage, and his throne protects him as readily as a retinue of guards by entangling would be attackers."
+#spreaddom 2
+#end
+
+--Allspawn, Consumer of Flesh
 
 -- Start sites
 #newsite 890
