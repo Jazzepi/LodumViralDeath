@@ -218,7 +218,7 @@
 #mapmove 1
 #ap 7
 #poisoncloud 25
-#descr "Smokestacks were named by the first victims of the Allspawn, the Tarum. Those native lizards, now literally subsumed into the great body of the Allspawn, choked to death on the toxic fumes that poured forth from the Smokestack’s single, hollow pillar of flesh. Smokestacks are grown by the Childern of the Allspawn and require rare ingredients from a number of plants, animals, and magical sources. This makes them both expensive and slow to produce. A single Smokestack can turn the tide of a battle, spreading a swath of poisonous decay that leaves the enemy breathless.  Despite their terrible power, Smokestacks are physically weak creatures with little ability for direct confrontation. When they do find themselves in combat, they fight with a set of thick, black tentacles that leech life from all those they touch."
+#descr "Smokestacks were named by the first victims of the Allspawn, the Tarum. Those native lizards, now literally subsumed into the great body of the Allspawn, choked to death on the toxic fumes that poured forth from the Smokestack's single, hollow pillar of flesh. Smokestacks are grown by the Childern of the Allspawn and require rare ingredients from a number of plants, animals, and magical sources. This makes them both expensive and slow to produce. A single Smokestack can turn the tide of a battle, spreading a swath of poisonous decay that leaves the enemy breathless.  Despite their terrible power, Smokestacks are physically weak creatures with little ability for direct confrontation. When they do find themselves in combat, they fight with a set of thick, black tentacles that leech life from all those they touch."
 #end
 
 #newmonster 2602
@@ -238,7 +238,7 @@
 #att 8
 #perc 10
 #ap 13
-#descr "Goombas are small, vaguely humanoid creatures constructed from the body parts of fallen enemies.  They are stitched together en masse in the temples of the great Lodum and blessed with new life by an injection of organic matter from a priest’s body. From this small injection spreads the terrible gift of the Allspawn. Goombas fight by overwhelming their opponents with sharp stabs of their injector spikes. They are nearly fearless being so possessed by the spirit of the Allspawn that they will fight to the last. As a matter of course, fallen Goombas are recovered from the battlefield only to be recycled back into more warriors for new legions in service to Lodum."
+#descr "Goombas are small, vaguely humanoid creatures constructed from the body parts of fallen enemies.  They are stitched together en masse in the temples of the great Lodum and blessed with new life by an injection of organic matter from a priest's body. From this small injection spreads the terrible gift of the Allspawn. Goombas fight by overwhelming their opponents with sharp stabs of their injector spikes. They are nearly fearless being so possessed by the spirit of the Allspawn that they will fight to the last. As a matter of course, fallen Goombas are recovered from the battlefield only to be recycled back into more warriors for new legions in service to Lodum."
 #end
 
 #newmonster 2603
@@ -299,7 +299,7 @@
 #att 9
 #perc 12
 #ap 12
-#descr "Boomers can often be smelled before they are seen.  Members of the local populace are converted into boomers while still living. A tube is inserted into the throat, and the Allspawn’s gift is fed to them until their stomachs burst. A lucky few die before their flesh begins to renew itself, but those who do not become Boomers. Large, lumbering, and filled to the brim with bile that distends their stomachs; Boomers fight by spewing forth the contents of their bellies. They shower the enemy in a thick coat of bile that eats away at their flesh and makes fighting difficult. The boomers then engage in meele where, if they are punctured by the enemy’s weapon, poisonous streams of toxic goo spray forth injuring the attacker."
+#descr "Boomers can often be smelled before they are seen.  Members of the local populace are converted into boomers while still living. A tube is inserted into the throat, and the Allspawn's gift is fed to them until their stomachs burst. A lucky few die before their flesh begins to renew itself, but those who do not become Boomers. Large, lumbering, and filled to the brim with bile that distends their stomachs; Boomers fight by spewing forth the contents of their bellies. They shower the enemy in a thick coat of bile that eats away at their flesh and makes fighting difficult. The boomers then engage in meele where, if they are punctured by the enemy's weapon, poisonous streams of toxic goo spray forth injuring the attacker."
 #end
 
 #newmonster 2606
@@ -334,7 +334,7 @@
 #weapon 701
 #weapon 701
 #weapon 701
-#descr "Faceless Lords are the penultimate creation of the Allspawn. They act as an army of one, laying waste to swaths of enemy troops with their many poison tipped appendages. These creatures are grown into a mass of flesh with an upwards jutting loop that bares its many appendages. Like a snake, a Faceless Lord moves by undulating the bottom curve of its form left to right. They are cultivated in the Spawning Pool of Lodum’s capital with the process taking months to grow a single successful Lord. Once unleashed the Faceless carry the full blessing of the Allspawn."
+#descr "Faceless Lords are the penultimate creation of the Allspawn. They act as an army of one, laying waste to swaths of enemy troops with their many poison tipped appendages. These creatures are grown into a mass of flesh with an upwards jutting loop that bares its many appendages. Like a snake, a Faceless Lord moves by undulating the bottom curve of its form left to right. They are cultivated in the Spawning Pool of Lodum's capital with the process taking months to grow a single successful Lord. Once unleashed the Faceless carry the full blessing of the Allspawn."
 #end
 
 #newmonster 2607
@@ -353,7 +353,7 @@
 #gcost 10
 #noleader
 #okmagicleader
-#descr "Lodum uses Sentient Masses to send the Allspawn’s wishes far and wide. Sentient Masses are often the leftovers of Goomba factories created across the land of Lodum.  They receive and distribute the Allspawn’s commands through a pair of antenna, leading the endless hordes of near mindless organic mobs to victory. Masses have no ability to defend themselves in a fight, and instead rely on bodyguards to keep enemies at bay."
+#descr "Lodum uses Sentient Masses to send the Allspawn's wishes far and wide. Sentient Masses are often the leftovers of Goomba factories created across the land of Lodum.  They receive and distribute the Allspawn's commands through a pair of antenna, leading the endless hordes of near mindless organic mobs to victory. Masses have no ability to defend themselves in a fight, and instead rely on bodyguards to keep enemies at bay."
 #end
 
 #newmonster 2608
@@ -378,7 +378,7 @@
 #ap 12
 #fear 0
 #diseasecloud 4
-#descr "Women of the nations bordering Lodum tell their naughty children that a Vile Stalker will come and steal their faces if they do not behave. The process for creating Stalkers is a closely guarded secret of Lodum, but the product is anything if not terrifying. Stalkers assimilate into other cultures by literally harvesting the memories, and skin, of its first victim. This makes them difficult to detect by even the most steadfast of guards. Once it is in place, the Stalker can assume that person’s identity until a new one is needed, or its primary target comes within range. Wrapped in the flesh of its victim’s friends, or family, a stalker can close the distance to its target to deliver a deadly poison via a pair of injectors. Even if the Stalker is slain during the course of its attack the pestilent nature of its felled body can leave its target diseased and unable to recover from a slow, agonizing death."
+#descr "Women of the nations bordering Lodum tell their naughty children that a Vile Stalker will come and steal their faces if they do not behave. The process for creating Stalkers is a closely guarded secret of Lodum, but the product is anything if not terrifying. Stalkers assimilate into other cultures by literally harvesting the memories, and skin, of its first victim. This makes them difficult to detect by even the most steadfast of guards. Once it is in place, the Stalker can assume that person's identity until a new one is needed, or its primary target comes within range. Wrapped in the flesh of its victim's friends, or family, a stalker can close the distance to its target to deliver a deadly poison via a pair of injectors. Even if the Stalker is slain during the course of its attack the pestilent nature of its felled body can leave its target diseased and unable to recover from a slow, agonizing death."
 #end
 
 #newmonster 2609
@@ -400,7 +400,7 @@
 #custommagic 12800 50
 #custommagic 2048 50
 #custommagic 2048 10
-#descr "Childern of the Allspawn are born when a female becomes infected with the Allspawn’s gift and survives to term. The resulting child chews its way forth, consuming its mother from the inside out, before fleeing its place of birth and returning to the Allspawn to join its legions.  There are efforts within Lodum to add this process to the meat factories that produce its other troops, but they have met with limited, and expensive, success. The spores that Allspawn spreads into the air directly, belched forth day after day, continue to be the main progenitor behind the Children."
+#descr "Childern of the Allspawn are born when a female becomes infected with the Allspawn's gift and survives to term. The resulting child chews its way forth, consuming its mother from the inside out, before fleeing its place of birth and returning to the Allspawn to join its legions.  There are efforts within Lodum to add this process to the meat factories that produce its other troops, but they have met with limited, and expensive, success. The spores that Allspawn spreads into the air directly, belched forth day after day, continue to be the main progenitor behind the Children."
 #end
 
 #newmonster 2610
@@ -425,7 +425,7 @@
 #startage -1
 #maxage 1000
 #pooramphibian
-#descr "Humans rarely service the Allspawn willingly. So when a cult of necromancers tried to study and subvert the power of the Allspawn, and they were discovered, their compliance to a new master was obtained through a lethal ritual. Dunked in a slime bath of the Allspawn’s liquid excrement until drowned, the necromancers were then reawakened as undead, while still bearing the gift of the Allspawn. Now they have only one duty to the Allspawn; to make the dead, as well as the living, its servants."
+#descr "Humans rarely service the Allspawn willingly. So when a cult of necromancers tried to study and subvert the power of the Allspawn, and they were discovered, their compliance to a new master was obtained through a lethal ritual. Dunked in a slime bath of the Allspawn's liquid excrement until drowned, the necromancers were then reawakened as undead, while still bearing the gift of the Allspawn. Now they have only one duty to the Allspawn; to make the dead, as well as the living, its servants."
 #end
 
 #newmonster 2611
@@ -443,7 +443,7 @@
 #onebattlespell 636
 #magicskill 4 1
 #noitem
-#descr "Humanoids submitted to the meat factories of Lodum often have their brains removed as the first step in processing.  This grey matter is collected in huge vats, and then mingled with crushed dust obtained by grinding down astral gems that naturally extrude from the Allspawn’s many orifices. Once so prepared, the brain matter is placed into a cylindrical metal container about the size of a small humanoid. Two of the hollowed out meatlings that were not processed for parts are then assigned to the container, and cart it from battle to battle. Once so combined the thinking flesh of a hundred victims can cast minor astral spells and lash out at the minds of other living beings."
+#descr "Humanoids submitted to the meat factories of Lodum often have their brains removed as the first step in processing.  This grey matter is collected in huge vats, and then mingled with crushed dust obtained by grinding down astral gems that naturally extrude from the Allspawn's many orifices. Once so prepared, the brain matter is placed into a cylindrical metal container about the size of a small humanoid. Two of the hollowed out meatlings that were not processed for parts are then assigned to the container, and cart it from battle to battle. Once so combined the thinking flesh of a hundred victims can cast minor astral spells and lash out at the minds of other living beings."
 #end
 
 #newmonster 2612
@@ -458,7 +458,7 @@
 #def 8
 #weapon 705
 #armor "Fibrous Bands"
-#descr "Heralds are the Allspawn’s direct connection to its many children. They broadcast commands to nearby troops ensuring that they stay engaged in combat. The censers they bear contain incense mixed with a regenerating piece of the Allspawn itself. As the incense burns, the chunk of flesh imparted from the Allspawn grant the censer deadly powers in combat. A few strong whiffs of the toxic smoke will leave even the strongest opponent incapacitated."
+#descr "Heralds are the Allspawn's direct connection to its many children. They broadcast commands to nearby troops ensuring that they stay engaged in combat. The censers they bear contain incense mixed with a regenerating piece of the Allspawn itself. As the incense burns, the chunk of flesh imparted from the Allspawn grant the censer deadly powers in combat. A few strong whiffs of the toxic smoke will leave even the strongest opponent incapacitated."
 #end
 
 #newmonster 2613
@@ -478,7 +478,7 @@
 #custommagic 12288 100
 #custommagic 12288 75
 #custommagic 12288 10
-#descr "Unlike the Childern of the Allspawn, which need female hosts, the Crests are grown directly on the Allspawn’s body. They incubate in milky white pockets that blister outwards from the great beast. They are delivered into the world by bursting free from the Allspawn’s blister-wombs. Their skin is a pallid white and their bodies are completely devoid of demarking features. Each inch of their smooth, hairless form is covered in a thick slime which provides them some protection. Because Crests are born directly from the Allspawn itself, they share an intimate connection with the astral magics that brought their beastly parent into existence."
+#descr "Unlike the Childern of the Allspawn, which need female hosts, the Crests are grown directly on the Allspawn's body. They incubate in milky white pockets that blister outwards from the great beast. They are delivered into the world by bursting free from the Allspawn's blister-wombs. Their skin is a pallid white and their bodies are completely devoid of demarking features. Each inch of their smooth, hairless form is covered in a thick slime which provides them some protection. Because Crests are born directly from the Allspawn itself, they share an intimate connection with the astral magics that brought their beastly parent into existence."
 #end
 
 #newmonster 2614
