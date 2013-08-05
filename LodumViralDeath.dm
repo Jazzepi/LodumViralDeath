@@ -1,10 +1,10 @@
-#modname "Lodum : Viral Death"
+#modname "Lodum, Viral Death"
 
 #description "Adds a land based late age nation named Lodum. Lodum is a nation of sentient viral masses, shambling mounds of slime, and infected hordes of living beings. Loosely inspired by Left 4 Dead, Zerg from Starcraft, and Slimeworld."
 
 #icon "LodumViralDeath/lodumbanner.tga"
 
-#version 0.3
+#version 0.4
 
 -- Weapons
 #newweapon 700
@@ -238,20 +238,21 @@
 #att 8
 #perc 10
 #ap 13
-#descr "Goombas are small, vaguely humanoid creatures constructed from the body parts of fallen enemies.  They are stitched together en mass in the temples of the great Lodum and blessed with new life by an injection of organic matter from a priest’s body. From this small injection spreads the terrible gift of the Allspawn. Goombas fight by overwhelming their opponents with sharp stabs of their injector spikes. They are nearly fearless being so possessed by the spirit of the Allspawn that they will fight to the last. As a matter of course, fallen Goombas are recovered from the battlefield only to be recycled back into more warriors for new legions in service to Lodum."
+#descr "Goombas are small, vaguely humanoid creatures constructed from the body parts of fallen enemies.  They are stitched together en masse in the temples of the great Lodum and blessed with new life by an injection of organic matter from a priest’s body. From this small injection spreads the terrible gift of the Allspawn. Goombas fight by overwhelming their opponents with sharp stabs of their injector spikes. They are nearly fearless being so possessed by the spirit of the Allspawn that they will fight to the last. As a matter of course, fallen Goombas are recovered from the battlefield only to be recycled back into more warriors for new legions in service to Lodum."
 #end
 
 #newmonster 2603
 #copystats 2500
 #diseasecloud 2
-#copyspr 984
+#spr1 "./LodumViralDeath/clatteringShambler1.tga"
+#spr2 "./LodumViralDeath/clatteringShambler2.tga"
 #name "Clattering Shambler"
 #armor "Scavenged Armor"
 #armor "Shield of Flesh"
 #weapon 701
 #gcost 10
 #rcost 1
-#size 2
+#size 3
 #hp 16
 #def 12
 #att 10
@@ -424,7 +425,7 @@
 #startage -1
 #maxage 1000
 #pooramphibian
-#descr "Humans rarely service the Allspawn willingly. So when a cult of necromancers tried to study and subvert the power of the Allspawn, and they were discovered, their compliance to a new master was obtained through a lethal ritual. Dunked in a slime bath of the Allspawn’s liquid excrement until drown, the necromancers were then reawakened as undead themselves still bearing the gift of the Allspawn. Now they have only one duty to the land of Lodum; to make the dead, as well as the living, its servants."
+#descr "Humans rarely service the Allspawn willingly. So when a cult of necromancers tried to study and subvert the power of the Allspawn, and they were discovered, their compliance to a new master was obtained through a lethal ritual. Dunked in a slime bath of the Allspawn’s liquid excrement until drowned, the necromancers were then reawakened as undead, while still bearing the gift of the Allspawn. Now they have only one duty to the Allspawn; to make the dead, as well as the living, its servants."
 #end
 
 #newmonster 2611
@@ -447,7 +448,8 @@
 
 #newmonster 2612
 #copystats 2500
-#copyspr 668
+#spr1 "./LodumViralDeath/herald1.tga"
+#spr2 "./LodumViralDeath/herald2.tga"
 #name "Herald of the Allspawn"
 #standard 13
 #diseasecloud 2
@@ -456,7 +458,6 @@
 #def 8
 #weapon 705
 #armor "Fibrous Bands"
-#armor "Censer of the Allspawn's Vitae"
 #descr "Heralds are the Allspawn’s direct connection to its many children. They broadcast commands to nearby troops ensuring that they stay engaged in combat. The censers they bear contain incense mixed with a regenerating piece of the Allspawn itself. As the incense burns, the chunk of flesh imparted from the Allspawn grant the censer deadly powers in combat. A few strong whiffs of the toxic smoke will leave even the strongest opponent incapacitated."
 #end
 
@@ -481,6 +482,20 @@
 #end
 
 #newmonster 2614
+#copystats 2500
+#copyspr 540
+#name "Conduit"
+#expertmagicleader
+#hp 13
+#gcost 20
+#rcost 3
+#weapon 917
+#itemslots 13446
+#descr "Conduits are "
+#end
+
+
+#newmonster 2614
 #copyspr 720
 #copystats 720
 #name "Lobotomized Thrall"
@@ -490,7 +505,9 @@
 
 #newmonster 2615
 #copystats 2500
-#name "Slug: The Allspawn's Bride"
+#spr1 "./LodumViralDeath/slug1.tga"
+#spr2 "./LodumViralDeath/slug2.tga"
+#name "Slug, The Allspawn's Bride"
 #end
 
 -- Pretender Gods
@@ -598,11 +615,11 @@
 #neednoteat
 #poisonres 100
 #heal
-#descr "Covus lead the necromancers' successful plot to enslave the Allspawn. After dominating the Allspawn with great magic, Covus turned against his fellows, and had them dipped in slime while still alive. For many years he ruled Lodum from his stolen throne, but the Allspawn's tainted influence flowed back to Covus's through his bond with the otherworldy creature. No one knows if he still commands the Allspawn, or if the Allspawn commands him, but Covus continues to sit on his throne, and never leaves. It shambles from place to place. Covus is a skilled mage, and his throne protects him as readily as a retinue of guards by entangling would be attackers."
+#descr "Covus lead the necromancers' successful plot to enslave the Allspawn. After dominating the Allspawn with great magic, Covus turned against his fellows, and had them dipped in slime while still alive. For many years he ruled Lodum from his stolen throne, but the Allspawn's tainted influence flowed back to Covus's through his bond with the otherworldy creature. No one knows if he still commands the Allspawn, or if the Allspawn commands him, but Covus continues to sit on his throne, and never leaves. Covus is cradled and kept alive by his throne, infused as it is with the Allspawn's essence. Covus is a skilled mage, and his throne protects him as readily as a retinue of guards by entangling would be attackers."
 #spreaddom 2
 #end
 
---Allspawn, Consumer of Flesh
+--Allspawn, End of Evolution
 
 -- Start sites
 #newsite 890
@@ -645,6 +662,17 @@
 #startsite "Spawning Pool"
 #color .8 1 .1
 #flag "LodumViralDeath/flag.tga"
+#descr "The human nation of Capulia was a rising star in the middle ages of the world. Capulia's people were happy, its fields fertile, and its kingdom prosperous. Even the enslaved race of lizard men known as the Kareeth knew some measure of respect and success amongst the people of Capulia. While they had less status and freedom than their human counterparts the Kareeth could hope to ascend to minor positions of power in government and society. That prosperity was ended by the new nation's namesake Lodum, a rogue biomancer who forged the Allspawn with awesome magic. Since the creation of the Allspawn, Capulia's true name has lost or discarded and it is only known as Lodum. The Allspawn is a being of great and terrible power. The Allspawn is the soul of Lodum, and in its creator's eyes, the end of evolution. Lodum has no government, no people, only legions of monsters birthed from, or infected by, the Allspawn. Now the Allspawn ascends towards Godhood, embracing all that it can."
+#summary "Race: Biological monstrosities infected or spawned from the Allspawn
+
+Military: Variety of specialized troops, very low protection, no archers, high hitpoints, regen
+
+Magic: Strong Death, Nature, Astral and weak Water
+
+Priests: Weak
+
+Heroes: Very strong"
+#brief "Lodum is a nation of biological and magical terror. Its people are twisted monsters who have been embraced by the Allspawn."
 
 -- Adding units
 #addrecunit "Goomba"
@@ -663,7 +691,14 @@
 -addreccom "Crest of the Allspawn"
 
 -- Add heroes
-#hero1 "Slug: Allspawn's Bride"
+#hero1 "Slug, Allspawn's Bride"
+-hero2 "Alexander, Heir of Lodum"
+-hero3 "Xitrum, Grand Hierophant"
+-hero4 "Felix, Last of the Biomancers"
+-hero5 "Jewel, Butcher of Women"
+-hero6 "Phoenix, Slimedragon"
+-multihero1 ""
+-multihero2 ""
 
 --Set what forts they will use.
 #startfort 5
