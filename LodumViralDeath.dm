@@ -67,13 +67,13 @@
 #end
 
 -- Armor
-#newarmor 200
-#name "Shield of Flesh"
-#type 4
-#prot 8
-#enc 1
-#rcost 2
-#end
+--newarmor 200
+--name "Shield of Flesh"
+--type 4
+--prot 8
+--enc 1
+--rcost 2
+--end
 
 #newarmor 201
 #name "Thick Slime"
@@ -94,15 +94,15 @@
 #newarmor 203
 #name "Scavenged Armor"
 #type 5
-#prot 8
-#enc 2
+#prot 7
+#enc 1
 #rcost 4
 #end
 
 #newarmor 204
 #name "Patchwork of Flesh"
 #type 5
-#prot 7
+#prot 5
 #enc 0
 #rcost 1
 #end
@@ -127,7 +127,7 @@
 #name "Fibrous Bands"
 #type 5
 #rcost 7
-#prot 12
+#prot 8
 #enc 4
 #rcost 5
 #end
@@ -194,11 +194,6 @@
 #descr "Slime Balls are crafted directly by the Allspawn in cavities located throughout its body. At any one time up to a dozen Slime Balls may be growing inside of the massive Allspawn. To produce these green, gooey masses of death the Allspawn consumes fresh organic matter. After digestion, it then compresses that flesh down into a hollow cavity roughly the size of a large chariot. After several days of adding new material, the Allspawn implants a small bit of its essence into the ball which gives it the spark of life it needs to move. Finally, the Allspawn regurgitates it onto land. From there it joins the endless hordes of Lodum."
 #end
 
-#newmonster 2655
-#copystats 1555
-#copyspr 1555
-#end
-
 #newmonster 2601
 #copystats 2501
 #spr1 "./LodumViralDeath/smokeStack1.tga"
@@ -248,7 +243,6 @@
 #spr2 "./LodumViralDeath/clatteringShambler2.tga"
 #name "Clattering Shambler"
 #armor "Scavenged Armor"
-#armor "Shield of Flesh"
 #weapon 701
 #gcost 10
 #rcost 1
@@ -257,8 +251,8 @@
 #def 12
 #att 10
 #perc 10
-#ap 13
-#descr "Clattering Shamblers are called such because of the terrible racket they make as they lope forward towards the enemy. Most of Lodum's troops simply neglect armor, but Shamblers wear various pieces of mismatched gear from fallen opponents. It provides a modicum of protection to the creature beneath the metal veil, which combined with its natural regenerative abilities, can make all the difference when closing the gap to the enemy. Shamblers are created from rotting organic material. They have no true form, as often leaving behind a patch of themselves on the battlefield, as growing new appendages from fresh organic matter scavenged from fallen warriors. Other nations tell tales of putting Shamblers to the sword, and finding their fallen comrades among the mix of foul smelling rot."
+#ap 8
+#descr "Clattering Shamblers earn their name from the terrible racket they make as they lope forward towards the enemy. Most of Lodum's troops simply neglect armor, but Shamblers wear various pieces of mismatched gear from fallen opponents. It provides a modicum of protection to the creature beneath the metal veil, which combined with its natural regenerative abilities, can make all the difference when closing the gap to the enemy. Shamblers are created from rotting organic material. They have no true form, as often leaving behind a patch of themselves on the battlefield, as growing new appendages from fresh organic matter scavenged from fallen warriors. Other nations tell tales of putting Shamblers to the sword, and finding their fallen comrades among the mix of foul smelling rot."
 #end
 
 #newmonster 2604
@@ -328,8 +322,8 @@
 #magicskill 5 1
 #custommagic 12800 100
 #custommagic 12800 100
-#custommagic 12800 100
-#custommagic 12800 100
+#custommagic 12800 75
+#custommagic 12800 50
 #weapon 701
 #weapon 701
 #weapon 701
@@ -451,12 +445,13 @@
 #spr1 "./LodumViralDeath/herald1.tga"
 #spr2 "./LodumViralDeath/herald2.tga"
 #name "Herald of the Allspawn"
-#standard 13
 #diseasecloud 2
+#holy
 #hp 16
 #att 9
 #def 8
 #weapon 705
+#ap 14
 #armor "Fibrous Bands"
 #descr "Heralds are the Allspawn's direct connection to its many children. They broadcast commands to nearby troops ensuring that they stay engaged in combat. The censers they bear contain incense mixed with a regenerating piece of the Allspawn itself. As the incense burns, the chunk of flesh imparted from the Allspawn grant the censer deadly powers in combat. A few strong whiffs of the toxic smoke will leave even the strongest opponent incapacitated."
 #end
@@ -483,19 +478,20 @@
 
 #newmonster 2614
 #copystats 2500
-#copyspr 540
+#spr1 "./LodumViralDeath/conduit1.tga"
+#spr2 "./LodumViralDeath/conduit2.tga"
 #name "Conduit"
 #expertmagicleader
 #hp 13
 #gcost 20
 #rcost 3
+#weapon 346
 #weapon 917
-#itemslots 13446
-#descr "Conduits are "
+#itemslots 15488
+#descr "Conduits are crafted by removing the arms of humanoids in the Lodum meat factories. The bones of their arms are filed down, galvanized, and reattached to the owner. They act as amplifying resonators for the Allspawn's commands. The conduits themselves have no capacity to think, and act merely as extensions of the Allspawn's will throughout the land of Lodum."
 #end
 
-
-#newmonster 2614
+#newmonster 2615
 #copyspr 720
 #copystats 720
 #name "Lobotomized Thrall"
@@ -503,7 +499,7 @@
 #mor 50
 #end
 
-#newmonster 2615
+#newmonster 2616
 #copystats 2500
 #spr1 "./LodumViralDeath/slug1.tga"
 #spr2 "./LodumViralDeath/slug2.tga"
@@ -596,6 +592,7 @@
 
 --Covus, Necromancer Enthroned
 #newmonster 2709
+#copystats 2500
 #name "Covus, Necromancer Enthroned"
 #spr1 "./LodumViralDeath/enthronedNecromancer1.tga"
 #spr2 "./LodumViralDeath/enthronedNecromancer2.tga"
@@ -603,23 +600,76 @@
 #hp 40
 #str 26
 #mounted
-#enc 2
 #gcost 40
-#swampsurvival
 #size 5
 #magicskill 4 3
 #magicskill 5 2
 #pathcost 25
 #fear 0
+#mounted
 #entangle
-#neednoteat
-#poisonres 100
-#heal
+#weapon 85
+#weapon 85
+#weapon 85
+#weapon 85
 #descr "Covus lead the necromancers' successful plot to enslave the Allspawn. After dominating the Allspawn with great magic, Covus turned against his fellows, and had them dipped in slime while still alive. For many years he ruled Lodum from his stolen throne, but the Allspawn's tainted influence flowed back to Covus's through his bond with the otherworldy creature. No one knows if he still commands the Allspawn, or if the Allspawn commands him, but Covus continues to sit on his throne, and never leaves. Covus is cradled and kept alive by his throne, infused as it is with the Allspawn's essence. Covus is a skilled mage, and his throne protects him as readily as a retinue of guards by entangling would be attackers."
 #spreaddom 2
 #end
 
+--Covus, Necromancer Ascendant
+#newmonster 2710
+#copystats 2500
+#copyspr 41
+#name "Covus, Necromancer Ascendant"
+-spr1 "./LodumViralDeath/covusAscendant1.tga"
+-spr2 "./LodumViralDeath/covusAscendant2.tga"
+#restrictedgod 85
+#hp 18
+#str 14
+#gcost 0
+#mr 14
+#magicskill 4 3
+#magicskill 5 2
+#magicskill 6 1
+#pathcost 10
+#weapon 85
+#shatteredsoul 3
+#descr "With the help of an enclave of necromancers Covus recently dominated the Allspawn. Its terrible taint has only begun to show. His fellow necromancers worry about his sanity as he struggles to keep a grip on reality while his essence touches that of the Allspawn's. He is an adept mage and can learn many paths of magic, though he is physically weak, and his battle to control the Allspawn has left his mental defenses lowered."
+#spreaddom 2
+#end
+
 --Allspawn, End of Evolution
+#newmonster 2711
+#copystats 2500
+#copyspr 2808
+#name "Allspawn, End of Evolution"
+-spr1 "./LodumViralDeath/allspawn1.tga"
+-spr2 "./LodumViralDeath/allspawn2.tga"
+#restrictedgod 85
+#immortal
+#magicbeing
+#blind
+#immobile
+#mapmove 0
+#ap 2
+#hp 200
+#str 30
+#gcost 0
+#size 6
+#itemslots 61440
+#mr 20
+#magicskill 4 3
+#magicskill 5 2
+#magicskill 6 1
+#pathcost 80
+#weapon 85
+#descr "The Allspawn is a creation of a biomancer named Lodum. It is an creature of organic and magic design that embraces all those that it touches. The Allspawn  "
+#spreaddom 2
+#fear 5
+#awe 1
+#poisoncloud 15
+#maxage 10000
+#end
 
 -- Start sites
 #newsite 890
@@ -681,14 +731,13 @@ Heroes: Very strong"
 #addrecunit "Congealed Mass"
 #addrecunit "Herald of the Allspawn"
 #addrecunit "Smokestack"
-#addrecunit 2655
 -addrecunit "Lobotomized Thrall"
 #addreccom "Sentient Mass"
 #addreccom "Cultivated Brain-Mass"
 #addreccom "Vile Stalker"
 #addreccom "Slime Dipped Necromancer"
 #addreccom "Child of the Allspawn"
--addreccom "Crest of the Allspawn"
+#addreccom "Conduit"
 
 -- Add heroes
 #hero1 "Slug, Allspawn's Bride"
