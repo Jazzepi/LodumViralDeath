@@ -66,6 +66,30 @@
 #rcost 0
 #end
 
+#newweapon 707
+#name "Lodum's Curse"
+#armornegating
+#dmg 5
+#rcost 0
+#secondaryeffect 700
+#len 4
+#def 4
+#att 2
+#magic
+#end
+
+#newweapon 708
+#name "Main Stalk"
+#dmg 3
+#rcost 0
+#secondaryeffect 700
+#len 5
+#def 1
+#att 3
+#magic
+#secondaryeffect 189
+#end
+
 -- Armor
 --newarmor 200
 --name "Shield of Flesh"
@@ -606,6 +630,7 @@
 #mounted
 #gcost 40
 #size 5
+#mor 30
 #magicskill 4 3
 #magicskill 5 2
 #pathcost 25
@@ -629,14 +654,16 @@
 #spr2 "./LodumViralDeath/covusAscendant2.tga"
 #restrictedgod 85
 #hp 18
-#str 14
-#gcost 0
+#str 7
+#mor 30
+#gcost 30
 #mr 14
-#magicskill 4 3
-#magicskill 5 2
+#magicskill 4 2
+#magicskill 5 1
 #magicskill 6 1
 #pathcost 10
-#weapon 85
+#armor 158
+#weapon 707
 #shatteredsoul 3
 #descr "With the help of an enclave of necromancers Covus recently dominated the Allspawn. Its terrible taint has only begun to show. His fellow necromancers worry about his sanity as he struggles to keep a grip on reality while his essence touches that of the Allspawn's. He is an adept mage and can learn many paths of magic, though he is physically weak, and his battle to control the Allspawn has left his mental defenses lowered."
 #spreaddom 2
@@ -656,9 +683,11 @@
 #immobile
 #mapmove 0
 #ap 2
+#mor 30
 #hp 200
 #str 30
-#gcost 0
+#gcost 50
+#def 0
 #size 6
 #itemslots 61440
 #mr 20
@@ -666,6 +695,10 @@
 #magicskill 5 2
 #magicskill 6 1
 #pathcost 80
+#weapon 708
+#weapon 85
+#weapon 85
+#weapon 85
 #weapon 85
 #descr "The Allspawn is a creation of a biomancer named Lodum. It is an creature of organic and magic design that embraces all those that it touches. The Allspawn  "
 #spreaddom 2
