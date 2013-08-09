@@ -2,7 +2,7 @@
 
 #description "Adds a land based late age nation named Lodum. Lodum is a nation of sentient viral masses, shambling mounds of slime, and infected hordes of living beings. Loosely inspired by Left 4 Dead, Zerg from Starcraft, and Slimeworld."
 
-#icon "LodumViralDeath/lodumbanner.tga"
+#icon "LodumViralDeath/lodumBanner.tga"
 
 #version 0.4
 
@@ -298,7 +298,8 @@
 
 #newmonster 2606
 #copystats 2501
-#copyspr 521	
+#spr1 "./LodumViralDeath/faceless1.tga"
+#spr2 "./LodumViralDeath/faceless2.tga"
 #name "Faceless Lord"
 #noleader
 #hp 70
@@ -458,7 +459,8 @@
 
 #newmonster 2613
 #copystats 2500
-#copyspr 540
+#spr1 "./LodumViralDeath/crest1.tga"
+#spr2 "./LodumViralDeath/crest2.tga"
 #name "Crest of the Allspawn"
 #armor "Thick Slime"
 #expertmagicleader
@@ -504,6 +506,8 @@
 #spr1 "./LodumViralDeath/slug1.tga"
 #spr2 "./LodumViralDeath/slug2.tga"
 #name "Slug, The Allspawn's Bride"
+#hp 90
+#itemslots 13446
 #end
 
 -- Pretender Gods
@@ -594,8 +598,8 @@
 #newmonster 2709
 #copystats 2500
 #name "Covus, Necromancer Enthroned"
-#spr1 "./LodumViralDeath/enthronedNecromancer1.tga"
-#spr2 "./LodumViralDeath/enthronedNecromancer2.tga"
+#spr1 "./LodumViralDeath/covusEnthroned1.tga"
+#spr2 "./LodumViralDeath/covusEnthroned2.tga"
 #restrictedgod 85
 #hp 40
 #str 26
@@ -621,8 +625,8 @@
 #copystats 2500
 #copyspr 41
 #name "Covus, Necromancer Ascendant"
--spr1 "./LodumViralDeath/covusAscendant1.tga"
--spr2 "./LodumViralDeath/covusAscendant2.tga"
+#spr1 "./LodumViralDeath/covusAscendant1.tga"
+#spr2 "./LodumViralDeath/covusAscendant2.tga"
 #restrictedgod 85
 #hp 18
 #str 14
@@ -643,8 +647,8 @@
 #copystats 2500
 #copyspr 2808
 #name "Allspawn, End of Evolution"
--spr1 "./LodumViralDeath/allspawn1.tga"
--spr2 "./LodumViralDeath/allspawn2.tga"
+#spr1 "./LodumViralDeath/allspawn1.tga"
+#spr2 "./LodumViralDeath/allspawn2.tga"
 #restrictedgod 85
 #immortal
 #magicbeing
