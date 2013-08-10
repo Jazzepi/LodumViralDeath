@@ -152,10 +152,9 @@
 #type 5
 #rcost 7
 #prot 8
-#enc 4
+#enc 0
 #rcost 5
 #end
-
 
 -- Units
 
@@ -200,7 +199,6 @@
 #spr2 "./LodumViralDeath/slimeball2.tga"
 #diseasecloud 2
 #name "Slime Ball"
-#mindless
 #trample
 #weapon 90
 #holy
@@ -245,7 +243,7 @@
 #spr1 "./LodumViralDeath/goomba1.tga"
 #spr2 "./LodumViralDeath/goomba2.tga"
 #name "Goomba"
-#mor 30
+#mor 50
 #diseasecloud 2
 #weapon 701
 #gcost 7
@@ -518,10 +516,21 @@
 #end
 
 #newmonster 2615
-#copyspr 720
-#copystats 720
+#copyspr 962
+#copystats 2500
+--spr1 "./LodumViralDeath/lobotomizedThrall1.tga"
+--spr2 "./LodumViralDeath/lobotomizedThrall2.tga"
+#diseasecloud 2
 #name "Lobotomized Thrall"
-#armor "Scavanged Armor"
+#hp 11
+#weapon 92
+#str 12
+#att 6
+#def 4
+#mr 5
+#perc 7
+#gcost 5
+#descr "The enslaved lizard people of Capulia knew only a life of service and when the Allspawn rose to power they did not resist their new master. Perhaps they would have had they known their eventual fate. Each one went to the Allspawn's meat factories and had their sense of self gently scraped free with a few taps of a pithing needle. They are the lowest of the Allspawn's creatures and the vanguard of the armies of Lodum where their primary role is dying."
 #mor 50
 #end
 
@@ -529,9 +538,25 @@
 #copystats 2500
 #spr1 "./LodumViralDeath/slug1.tga"
 #spr2 "./LodumViralDeath/slug2.tga"
-#name "Slug, The Allspawn's Bride"
+#name "Slug, Allspawn's Bride"
+#att 14
+#def 12
+#size 4
+#str 18
+#mor 20
 #hp 90
+#fear 0
+#holy
+#mr 18
+#weapon 249
+#weapon 249
+#weapon 322
+#armor "Thick Slime"
+#magicskill 8 1
 #itemslots 13446
+#noleader
+#spreaddom 1
+#descr "Slug was one of the first women priests in Capulia's state sponsored holy order. When the Allspawn rose and overthrew the religious institutions of Capulia Slug gave herself willingly. The Allspawn defiled her physically, spiritually, and mentally while replacing her devotion to the old gods with a new one. Slug is now one of the strongest adherents of the Allspawn, and her body has been completely transformed by the Allspawn's embrace."
 #end
 
 -- Pretender Gods
@@ -762,19 +787,32 @@ Heroes: Very strong"
 #brief "Lodum is a nation of biological and magical terror. Its people are twisted monsters who have been embraced by the Allspawn."
 
 -- Adding units
+#addrecunit "Lobotomized Thrall"
 #addrecunit "Goomba"
 #addrecunit "Boomer"
 #addrecunit "Clattering Shambler"
 #addrecunit "Congealed Mass"
 #addrecunit "Herald of the Allspawn"
 #addrecunit "Smokestack"
--addrecunit "Lobotomized Thrall"
 #addreccom "Sentient Mass"
-#addreccom "Cultivated Brain-Mass"
+#addreccom "Conduit"
 #addreccom "Vile Stalker"
+#addreccom "Cultivated Brain-Mass"
 #addreccom "Slime Dipped Necromancer"
 #addreccom "Child of the Allspawn"
-#addreccom "Conduit"
+
+-- Province Defense
+#defcom1 "Conduit"
+#defcom2 "Child of the Allspawn"
+#defunit1 "Lobotomized Thrall"
+#defunit1b "Boomer"
+#defunit2 "Goomba"
+#defunit2b "Clattering Shambler"
+
+#defmult1 30
+#defmult1b 10
+#defmult2 20
+#defmult2b 10
 
 -- Add heroes
 #hero1 "Slug, Allspawn's Bride"
