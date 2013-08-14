@@ -44,7 +44,7 @@
 #end
 
 #newweapon 704
-#name "Slimey Coating"	
+#name "Slimy Coating"	
 #dmg 9
 #dt_poison
 #secondaryeffectalways 329
