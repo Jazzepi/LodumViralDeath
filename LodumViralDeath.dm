@@ -8,9 +8,8 @@
 
 -- Weapons
 #newweapon 700
-#copystat
 #name "Virulent Infection"
-#dmg 9	
+#dmg 9
 #dt_poison
 #end
 
@@ -82,12 +81,38 @@
 #name "Main Stalk"
 #dmg 3
 #rcost 0
-#secondaryeffect 700
+#secondaryeffect 189
 #len 5
 #def 1
 #att 3
 #magic
-#secondaryeffect 189
+#end
+
+#newweapon 709
+#name "Left Slimy Claw"
+#dmg 3
+#rcost 0
+#secondaryeffect 711
+#len 1
+#def 0
+#att 3
+#end
+
+#newweapon 710
+#name "Right Slimy Claw"
+#dmg 3
+#rcost 0
+#secondaryeffect 54
+#len 1
+#def 0
+#att 3
+#end
+
+#newweapon 711
+#name "Pustulant Wound"
+#dmg 30
+#dt_poison
+#secondaryeffect 64
 #end
 
 -- Armor
@@ -516,14 +541,13 @@
 #end
 
 #newmonster 2615
-#copyspr 962
 #copystats 2500
---spr1 "./LodumViralDeath/lobotomizedThrall1.tga"
---spr2 "./LodumViralDeath/lobotomizedThrall2.tga"
+#spr1 "./LodumViralDeath/lobotomizedThrall1.tga"
+#spr2 "./LodumViralDeath/lobotomizedThrall2.tga"
 #diseasecloud 2
 #name "Lobotomized Thrall"
 #hp 11
-#weapon 92
+#weapon 29
 #str 12
 #att 6
 #def 4
@@ -539,6 +563,7 @@
 #spr1 "./LodumViralDeath/slug1.tga"
 #spr2 "./LodumViralDeath/slug2.tga"
 #name "Slug, Allspawn's Bride"
+#gcost 0
 #att 14
 #def 12
 #size 4
@@ -557,6 +582,34 @@
 #noleader
 #spreaddom 1
 #descr "Slug was one of the first women priests in Capulia's state sponsored holy order. When the Allspawn rose and overthrew the religious institutions of Capulia Slug gave herself willingly. The Allspawn defiled her physically, spiritually, and mentally while replacing her devotion to the old gods with a new one. Slug is now one of the strongest adherents of the Allspawn, and her body has been completely transformed by the Allspawn's embrace."
+#end
+
+#newmonster 2617
+#copystats 2500
+#spr1 "./LodumViralDeath/phoenix1.tga"
+#spr2 "./LodumViralDeath/phoenix2.tga"
+#name "Phoenix, Slimedragon"
+#gcost 0
+#flying
+#assassin
+#att 16
+#def 13
+#size 4
+#str 22
+#mor 20
+#hp 45
+#mr 18
+#stealthy 25
+#weapon 709
+#weapon 710
+#weapon 322
+#weapon 915
+#armor "Thick Slime"
+#magicskill 2 2
+#magicskill 5 2
+#itemslots 13446
+#noleader
+#descr "Phoenix T'ril"
 #end
 
 -- Pretender Gods
@@ -801,6 +854,14 @@ Heroes: Very strong"
 #addreccom "Slime Dipped Necromancer"
 #addreccom "Child of the Allspawn"
 
+-- Quick graphical/stats testing of heroes these should all be commented out in the released versions
+-addreccom "Slug, Allspawn's Bride"
+-addreccom "Alexander, Heir of Lodum"
+-addreccom "Xitrum, Grand Hierophant"
+-addreccom "Felix, Last of the Biomancers"
+-addreccom "Jewel, Butcher of Women"
+-addreccom "Phoenix, Slimedragon"
+
 -- Province Defense
 #defcom1 "Conduit"
 #defcom2 "Child of the Allspawn"
@@ -820,7 +881,7 @@ Heroes: Very strong"
 -hero3 "Xitrum, Grand Hierophant"
 -hero4 "Felix, Last of the Biomancers"
 -hero5 "Jewel, Butcher of Women"
--hero6 "Phoenix, Slimedragon"
+#hero6 "Phoenix, Slimedragon"
 -multihero1 ""
 -multihero2 ""
 
