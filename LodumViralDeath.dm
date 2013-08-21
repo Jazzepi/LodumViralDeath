@@ -4,7 +4,7 @@
 
 #icon "LodumViralDeath/lodumBanner.tga"
 
-#version 0.4
+#version 0.5
 
 -- Weapons
 #newweapon 700
@@ -55,7 +55,8 @@
 #dt_stun
 #dmg 36
 #rcost 2
-#armornegating	
+#armornegating
+#magic
 #end
 
 #newweapon 706
@@ -63,6 +64,7 @@
 #armornegating
 #dmg 15
 #rcost 0
+#magic
 #end
 
 #newweapon 707
@@ -113,6 +115,27 @@
 #dmg 30
 #dt_poison
 #secondaryeffect 64
+#end
+
+#newweapon 712
+#name "Soul Stained Cleaver"
+#dmg 6
+#att 3
+#len 1
+#armorpiercing
+#magic
+#secondaryeffect 421
+#end
+
+#newweapon 713
+#name "Fetal Flail"
+#bonus
+#dmg 4
+#att 2
+#flail
+#len 4
+#magic
+#secondaryeffect 431
 #end
 
 -- Armor
@@ -579,7 +602,9 @@
 #armor "Thick Slime"
 #magicskill 8 1
 #itemslots 13446
-#noleader
+#okleader
+#goodmagicleader
+#goodundeadleader
 #spreaddom 1
 #descr "Slug was one of the first women priests in Capulia's state sponsored holy order. When the Allspawn rose and overthrew the religious institutions of Capulia Slug gave herself willingly. The Allspawn defiled her physically, spiritually, and mentally while replacing her devotion to the old gods with a new one. Slug is now one of the strongest adherents of the Allspawn, and her body has been completely transformed by the Allspawn's embrace."
 #end
@@ -605,11 +630,107 @@
 #weapon 322
 #weapon 915
 #armor "Thick Slime"
-#magicskill 2 2
-#magicskill 5 2
+#magicskill 2 3
+#magicskill 5 3
 #itemslots 13446
 #noleader
 #descr "Phoenix T'ril"
+#end
+
+#newmonster 2618
+#copystats 2500
+#copyspr 488
+#name "Meatfactory Monstrosity"
+#gcost 0
+#att 14
+#def 6
+#size 6
+#str 28
+#mor 50
+#hp 120
+#mr 18
+#fear 0
+#weapon 92
+#weapon 271
+#weapon 322
+#holy
+#mapmove 3
+#itemslots 15494
+#noleader
+#descr "The Lodum meatfactories take in thousands of unwilling supplicants each day and strip away their weakness with the embrace of the Allspawn. Their flesh is hollowed, their minds turned, and their spirits broken. Many supplicants do not survive the process, but the meatfactories do not waste what can be salvaged. The Monstrosities are the result of recycling what can be salvage. Bits of each supplicant are stitched together, and animated by an infusion of the Allspawn's essence which grants them its blessing."
+#end
+
+#newmonster 2619
+#copystats 2500
+#copyspr 170
+#name "Shaman Betrayer"
+#magicskill 6 1
+#magicskill 8 1
+#hp 14
+#weapon 7
+#str 12
+#att 8
+#def 8
+#mr 13
+#gcost 40
+#poormagicleader
+#descr "The Allspawn cast down all but a select few of Capulia's old clerical sect. To replace them the Allspawn used shaman from the lizard slave caste of Capulia. Those that joined the Allspawn's legions as its new priests were embraced by the Allspawn. Those who refused were sent to Lodum's meat factories to join the growing ranks of the lobotomized thralls. The shamans that willingly joined the ranks of the Allspawn priesthood are known to their people only as betrayers whose names are forbidden to be spoken."
+#mor 13
+#end
+
+#newmonster 2620
+#copystats 2500
+#spr1 "./LodumViralDeath/jewel1.tga"
+#spr2 "./LodumViralDeath/jewel2.tga"
+#name "Jewel, Butcher of Women"
+#onebattlespell "Wailing Winds"
+#female
+#fear 0
+#magicskill 2 3
+#magicskill 5 3
+#hp 65
+#weapon 712
+#weapon 713
+#armor 269
+#str 20
+#att 14
+#def 12
+#mr 18
+#gcost 0
+#noleader
+#ap 14
+#mor 20
+#descr "After having once been processed there herself, Jewel spends her days working in the meat factories of Lodum. She takes special pleasure in disassembling pregnant women into their constituent parts. In battle shes carries her favorite meat cleaver, and a flail lined with the undead aborted fetuses of her latest victims. Their shrill, perpetual screams fill the enemy with fear. There is nothing sweeter to her than cries of her victims both off and on the field of battle."
+#end
+
+#newmonster 2621
+#copystats 2500
+#spr1 "./LodumViralDeath/xitrum1.tga"
+#spr2 "./LodumViralDeath/xitrum2.tga"
+#name "Xitrum, Grand Hierophant"
+#magicskill 8 5
+#hp 23
+#weapon 85
+#weapon 85
+#weapon 271
+#weapon 271
+#weapon 271
+#itemslots 29702
+#armor 158
+#str 13
+#att 12
+#def 10
+#mr 20
+#gcost 0
+#superiorleader
+#goodmagicleader
+#superiorundeadleader
+#mor 20
+#holy
+#spreaddom 1
+#domsummon 2612
+#domsummon20 2600
+#descr "Xitrum was the leader of Capulia's holy order when the Allspawn came into being. He was personally embraced by the Allspawn, and now carries the new faith with his reborn body. He spreads the word of the Allspawn with equal zeal of any prophet, and attracts sacred followers into Lodum's flocks while within the Allspawn's dominion."
 #end
 
 -- Pretender Gods
@@ -630,7 +751,7 @@
 
 --Divine Serpent
 #newmonster 2702
-#copystats 779
+#2copystats 779
 #copyspr 779
 #restrictedgod 85
 #magicskill 6 4
@@ -849,6 +970,7 @@ Heroes: Very strong"
 #addrecunit "Smokestack"
 #addreccom "Sentient Mass"
 #addreccom "Conduit"
+#addreccom "Shaman Betrayer"
 #addreccom "Vile Stalker"
 #addreccom "Cultivated Brain-Mass"
 #addreccom "Slime Dipped Necromancer"
@@ -861,6 +983,7 @@ Heroes: Very strong"
 -addreccom "Felix, Last of the Biomancers"
 -addreccom "Jewel, Butcher of Women"
 -addreccom "Phoenix, Slimedragon"
+-addreccom "Meatfactory Monstrosity"
 
 -- Province Defense
 #defcom1 "Conduit"
@@ -876,14 +999,14 @@ Heroes: Very strong"
 #defmult2b 10
 
 -- Add heroes
-#hero1 "Slug, Allspawn's Bride"
--hero2 "Alexander, Heir of Lodum"
--hero3 "Xitrum, Grand Hierophant"
--hero4 "Felix, Last of the Biomancers"
--hero5 "Jewel, Butcher of Women"
-#hero6 "Phoenix, Slimedragon"
--multihero1 ""
--multihero2 ""
+#hero1 2616 --"Slug, Allspawn's Bride"
+-hero2 --"Alexander, Heir of Lodum"
+#hero3 2621 --"Xitrum, Grand Hierophant"
+-hero4 --"Felix, Last of the Biomancers"
+#hero5 2620 --"Jewel, Butcher of Women"
+#hero6 2617 --"Phoenix, Slimedragon"
+#multihero1 2618 --"Meatfactory Monstrosity"
+-multihero2
 
 --Set what forts they will use.
 #startfort 5
