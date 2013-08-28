@@ -6,6 +6,38 @@
 
 #version 0.5
 
+
+-- Add the unique names for our heroes
+#selectnametype 151
+#clear
+#addname "Slug"
+#end
+
+#selectnametype 152
+#clear
+#addname "Phoenix T'ril"
+#end
+
+#selectnametype 153
+#clear
+#addname "Jewel"
+#end
+
+#selectnametype 154
+#clear
+#addname "Xitrum"
+#end
+
+#selectnametype 155
+#clear
+#addname "Alexander"
+#end
+
+#selectnametype 156
+#clear
+#addname "Felix"
+#end
+
 -- Weapons
 #newweapon 700
 #name "Virulent Infection"
@@ -44,7 +76,7 @@
 #end
 
 #newweapon 704
-#name "Slimy Coating"	
+#name "Slimy Coating"
 #dmg 9
 #dt_poison
 #secondaryeffectalways 329
@@ -138,7 +170,82 @@
 #secondaryeffect 431
 #end
 
+#newweapon 714
+#name "Lightning"
+#range 30
+#att 3
+#dmg 0
+#dt_cap
+#ammo 10
+#armornegating
+#magic
+#shock
+#flyspr 210
+#secondaryeffectalways 715
+#sound 24
+#end
+
+#newweapon 715
+#name "Lightning"
+#shock
+#magic
+#armornegating
+#dmg 11
+#nostr
+#explspr 10219
+#end
+
+#newweapon 716
+#name "Tail"
+#len 5
+#att 0
+#dmg 0
+#def 2
+#bonus
+#end
+
+#newweapon 717
+#name "Tentacle"
+#len 4
+#dmg -5
+#armorpiercing
+#bonus
+#end
+
+#newweapon 718
+#name "Bile"
+#flyspr 177 4
+#dt_poison
+#poison
+#explspr 10019
+#ammo 8
+#range -1
+#aoe 10
+#end
+
+#newweapon 719
+#name "Alexander's Candle"
+#att 2
+#def 1
+#dmg 3
+#len 2
+#magic
+#secondaryeffectalways 720
+#end
+
+#newweapon 720
+#name "Fire Wave"
+#explspr 10103
+#fire
+#armorpiercing
+#dmg 12
+#nostr
+#aoe 4
+#end
+
 -- Armor
+
+
 --newarmor 200
 --name "Shield of Flesh"
 --type 4
@@ -198,10 +305,17 @@
 #newarmor 207
 #name "Fibrous Bands"
 #type 5
-#rcost 7
 #prot 8
 #enc 0
-#rcost 5
+#rcost 4
+#end
+
+#newarmor 208
+#name "Apron"
+#type 5
+#prot 5
+#enc 0
+#def 0
 #end
 
 -- Units
@@ -212,7 +326,6 @@
 #mor 14
 #enc 2
 #magicbeing
-#blind
 #neednoteat
 #poisonres 100
 #heal
@@ -230,7 +343,6 @@
 #mor 14
 #enc 2
 #magicbeing
-#blind
 #neednoteat
 #poisonres 100
 #heal
@@ -247,11 +359,12 @@
 #spr2 "./LodumViralDeath/slimeball2.tga"
 #diseasecloud 2
 #name "Slime Ball"
+#blind
 #trample
 #weapon 90
 #holy
 #gcost 140
-#rcost 20
+#rcost 15
 #size 6
 #hp 60
 #mr 14
@@ -270,10 +383,11 @@
 #spr2 "./LodumViralDeath/smokeStack2.tga"
 #diseasecloud 2
 #name "Smokestack"
+#blind
 #weapon 271
 #weapon 271
 #gcost 170
-#rcost 25
+#rcost 18
 #size 6
 #hp 35
 #str 17
@@ -281,7 +395,7 @@
 #att 8
 #prec 10
 #mapmove 1
-#ap 7
+#ap 8
 #poisoncloud 25
 #descr "Smokestacks were named by the first victims of the Allspawn, the Tarum. Those native lizards, now literally subsumed into the great body of the Allspawn, choked to death on the toxic fumes that poured forth from the Smokestack's single, hollow pillar of flesh. Smokestacks are grown by the Childern of the Allspawn and require rare ingredients from a number of plants, animals, and magical sources. This makes them both expensive and slow to produce. A single Smokestack can turn the tide of a battle, spreading a swath of poisonous decay that leaves the enemy breathless.  Despite their terrible power, Smokestacks are physically weak creatures with little ability for direct confrontation. When they do find themselves in combat, they fight with a set of thick, black tentacles that leech life from all those they touch."
 #end
@@ -302,7 +416,6 @@
 #def 11
 #att 8
 #perc 10
-#ap 13
 #descr "Goombas are small, vaguely humanoid creatures constructed from the body parts of fallen enemies.  They are stitched together en masse in the temples of the great Lodum and blessed with new life by an injection of organic matter from a priest's body. From this small injection spreads the terrible gift of the Allspawn. Goombas fight by overwhelming their opponents with sharp stabs of their injector spikes. They are nearly fearless being so possessed by the spirit of the Allspawn that they will fight to the last. As a matter of course, fallen Goombas are recovered from the battlefield only to be recycled back into more warriors for new legions in service to Lodum."
 #end
 
@@ -313,15 +426,15 @@
 #spr2 "./LodumViralDeath/clatteringShambler2.tga"
 #name "Clattering Shambler"
 #armor "Scavenged Armor"
+#blind
 #weapon 701
 #gcost 10
 #rcost 1
 #size 3
 #hp 16
-#def 12
+#def 9
 #att 10
 #perc 10
-#ap 8
 #descr "Clattering Shamblers earn their name from the terrible racket they make as they lope forward towards the enemy. Most of Lodum's troops simply neglect armor, but Shamblers wear various pieces of mismatched gear from fallen opponents. It provides a modicum of protection to the creature beneath the metal veil, which combined with its natural regenerative abilities, can make all the difference when closing the gap to the enemy. Shamblers are created from rotting organic material. They have no true form, as often leaving behind a patch of themselves on the battlefield, as growing new appendages from fresh organic matter scavenged from fallen warriors. Other nations tell tales of putting Shamblers to the sword, and finding their fallen comrades among the mix of foul smelling rot."
 #end
 
@@ -368,8 +481,8 @@
 
 #newmonster 2606
 #copystats 2501
-#spr1 "./LodumViralDeath/faceless1.tga"
-#spr2 "./LodumViralDeath/faceless2.tga"
+#spr1 "./LodumViralDeath/facelessLord1.tga"
+#spr2 "./LodumViralDeath/facelessLord2.tga"
 #name "Faceless Lord"
 #noleader
 #hp 70
@@ -399,6 +512,7 @@
 #weapon 701
 #weapon 701
 #weapon 701
+#weapon 20
 #descr "Faceless Lords are the penultimate creation of the Allspawn. They act as an army of one, laying waste to swaths of enemy troops with their many poison tipped appendages. These creatures are grown into a mass of flesh with an upwards jutting loop that bares its many appendages. Like a snake, a Faceless Lord moves by undulating the bottom curve of its form left to right. They are cultivated in the Spawning Pool of Lodum's capital with the process taking months to grow a single successful Lord. Once unleashed the Faceless carry the full blessing of the Allspawn."
 #end
 
@@ -423,7 +537,8 @@
 
 #newmonster 2608
 #copystats 2501
-#copyspr 427
+#spr1 "./LodumViralDeath/vileStalker1.tga"
+#spr2 "./LodumViralDeath/vileStalker2.tga"
 #name "Vile Stalker"
 #armor "Patchwork of Flesh"
 #armor "Stolen Face"
@@ -453,8 +568,6 @@
 #goodmagicleader
 #hp 20
 #mr 17
-#armor "Thick Slime"
-#armor "Pair of Antenna"
 #gcost 345
 #holy
 #itemslots 13446
@@ -505,7 +618,6 @@
 #weapon 86
 #weapon 346
 #att 6
-#onebattlespell 636
 #magicskill 4 1
 #noitem
 #descr "Humanoids submitted to the meat factories of Lodum often have their brains removed as the first step in processing.  This grey matter is collected in huge vats, and then mingled with crushed dust obtained by grinding down astral gems that naturally extrude from the Allspawn's many orifices. Once so prepared, the brain matter is placed into a cylindrical metal container about the size of a small humanoid. Two of the hollowed out meatlings that were not processed for parts are then assigned to the container, and cart it from battle to battle. Once so combined the thinking flesh of a hundred victims can cast minor astral spells and lash out at the minds of other living beings."
@@ -523,6 +635,7 @@
 #def 8
 #weapon 705
 #ap 14
+#mr 16
 #armor "Fibrous Bands"
 #descr "Heralds are the Allspawn's direct connection to its many children. They broadcast commands to nearby troops ensuring that they stay engaged in combat. The censers they bear contain incense mixed with a regenerating piece of the Allspawn itself. As the incense burns, the chunk of flesh imparted from the Allspawn grant the censer deadly powers in combat. A few strong whiffs of the toxic smoke will leave even the strongest opponent incapacitated."
 #end
@@ -538,8 +651,7 @@
 #holy
 #gcost 210
 #rcost 1
-#weapon 706
-#armor "Pair of Antenna"
+#weapon 33
 #itemslots 13446
 #magicskill 4 3
 #custommagic 12288 100
@@ -558,7 +670,7 @@
 #gcost 20
 #rcost 3
 #weapon 346
-#weapon 917
+#weapon 714
 #itemslots 15488
 #descr "Conduits are crafted by removing the arms of humanoids in the Lodum meat factories. The bones of their arms are filed down, galvanized, and reattached to the owner. They act as amplifying resonators for the Allspawn's commands. The conduits themselves have no capacity to think, and act merely as extensions of the Allspawn's will throughout the land of Lodum."
 #end
@@ -585,7 +697,8 @@
 #copystats 2500
 #spr1 "./LodumViralDeath/slug1.tga"
 #spr2 "./LodumViralDeath/slug2.tga"
-#name "Slug, Allspawn's Bride"
+#name "Allspawn's Bride"
+#nametype 151
 #gcost 0
 #att 14
 #def 12
@@ -599,8 +712,9 @@
 #weapon 249
 #weapon 249
 #weapon 322
+#weapon 718
 #armor "Thick Slime"
-#magicskill 8 1
+#magicskill 8 3
 #itemslots 13446
 #okleader
 #goodmagicleader
@@ -613,7 +727,8 @@
 #copystats 2500
 #spr1 "./LodumViralDeath/phoenix1.tga"
 #spr2 "./LodumViralDeath/phoenix2.tga"
-#name "Phoenix, Slimedragon"
+#name "Slimedragon"
+#nametype 152
 #gcost 0
 #flying
 #assassin
@@ -628,7 +743,7 @@
 #weapon 709
 #weapon 710
 #weapon 322
-#weapon 915
+#weapon 716
 #armor "Thick Slime"
 #magicskill 2 3
 #magicskill 5 3
@@ -653,16 +768,16 @@
 #weapon 92
 #weapon 271
 #weapon 322
-#holy
 #mapmove 3
 #itemslots 15494
 #noleader
-#descr "The Lodum meatfactories take in thousands of unwilling supplicants each day and strip away their weakness with the embrace of the Allspawn. Their flesh is hollowed, their minds turned, and their spirits broken. Many supplicants do not survive the process, but the meatfactories do not waste what can be salvaged. The Monstrosities are the result of recycling what can be salvage. Bits of each supplicant are stitched together, and animated by an infusion of the Allspawn's essence which grants them its blessing."
+#descr "The Lodum meatfactories take in thousands of unwilling supplicants each day and strip away their weakness with the embrace of the Allspawn. Their flesh is hollowed, their minds turned, and their spirits broken. Many supplicants do not survive the process, but the meatfactories do not waste what can be salvaged. The Monstrosities are the result of recycling what can be salvage. Bits of each supplicant are stitched together, and animated by an infusion of the Allspawn's essence."
 #end
 
 #newmonster 2619
 #copystats 2500
-#copyspr 170
+#spr1 "./LodumViralDeath/shamanBetrayer1.tga"
+#spr2 "./LodumViralDeath/shamanBetrayer2.tga"
 #name "Shaman Betrayer"
 #magicskill 6 1
 #magicskill 8 1
@@ -674,15 +789,16 @@
 #mr 13
 #gcost 40
 #poormagicleader
-#descr "The Allspawn cast down all but a select few of Capulia's old clerical sect. To replace them the Allspawn used shaman from the lizard slave caste of Capulia. Those that joined the Allspawn's legions as its new priests were embraced by the Allspawn. Those who refused were sent to Lodum's meat factories to join the growing ranks of the lobotomized thralls. The shamans that willingly joined the ranks of the Allspawn priesthood are known to their people only as betrayers whose names are forbidden to be spoken."
 #mor 13
+#descr "The Allspawn cast down all but a select few of Capulia's old clerical sect. To replace them the Allspawn used shaman from the lizard slave caste of Capulia. Those that joined the Allspawn's legions as its new priests were embraced by the Allspawn. Those who refused were sent to Lodum's meat factories to join the growing ranks of the lobotomized thralls. The shamans that willingly joined the ranks of the Allspawn priesthood are known to their people only as betrayers whose names are forbidden to be spoken."
 #end
 
 #newmonster 2620
 #copystats 2500
 #spr1 "./LodumViralDeath/jewel1.tga"
 #spr2 "./LodumViralDeath/jewel2.tga"
-#name "Jewel, Butcher of Women"
+#name "Butcher of Women"
+#nametype 153
 #onebattlespell "Wailing Winds"
 #female
 #fear 0
@@ -691,7 +807,7 @@
 #hp 65
 #weapon 712
 #weapon 713
-#armor 269
+#armor 208
 #str 20
 #att 14
 #def 12
@@ -707,7 +823,8 @@
 #copystats 2500
 #spr1 "./LodumViralDeath/xitrum1.tga"
 #spr2 "./LodumViralDeath/xitrum2.tga"
-#name "Xitrum, Grand Hierophant"
+#name "Grand Hierophant"
+#nametype 154
 #magicskill 8 5
 #hp 23
 #weapon 85
@@ -726,11 +843,62 @@
 #goodmagicleader
 #superiorundeadleader
 #mor 20
+#blind
 #holy
 #spreaddom 1
 #domsummon 2612
 #domsummon20 2600
 #descr "Xitrum was the leader of Capulia's holy order when the Allspawn came into being. He was personally embraced by the Allspawn, and now carries the new faith with his reborn body. He spreads the word of the Allspawn with equal zeal of any prophet, and attracts sacred followers into Lodum's flocks while within the Allspawn's dominion."
+#end
+
+#newmonster 2622
+#copystats 2500
+#spr1 "./LodumViralDeath/alexander1.tga"
+#spr2 "./LodumViralDeath/alexander2.tga"
+#name "Heir of Lodum"
+#nametype 155
+#magicskill 0 3
+#magicskill 2 3
+#hp 25
+#weapon 719
+#fireres 75
+#coldres 50
+#weapon 717
+#armor 69
+#armor 40
+#armor 38
+#str 16
+#att 14
+#def 12
+#mr 20
+#gcost 0
+#okleader
+#goodmagicleader
+#mor 20
+#descr "Alexander is the son of Lodum, the creator of the Allspawn. After the rise of the Allspawn Alexander fled from his studies as a young biomancer and started a resistance movement. He studied the powers of fire and ice to learn new ways to purge Lodum of the Allspawn's terror, and personally lead many raids on infected villages, meat factories, and the new temples of flesh dedicated to the Allspawn. Betrayed by Felix, he was recently captured and personally embraced by the Allspawn. Alexander now serves as the Allspawn's loyal host furthering the goals of the horror that his father unleashed."
+#end
+
+#newmonster 2623
+#copystats 2500
+#spr1 "./LodumViralDeath/felix1.tga"
+#spr2 "./LodumViralDeath/felix2.tga"
+#name "Last of the Biomancers"
+#nametype 156
+#magicskill 3 3
+#magicskill 5 3
+#magicskill 6 3
+#hp 15
+#weapon 85
+#armor 158
+#str 12
+#att 10
+#def 10
+#mr 20
+#gcost 0
+#okleader
+#goodmagicleader
+#mor 20
+#descr "Felix is the last survivor of a new cabal of earthbound biomancers. Their experiments focused on combining the durability of stone and steel with the natural regenerative properties of their organic monstrosity. The rise of the Allspawn interrupted their work, but Felix continues on after having made a grand bargin with the Allspawn. He gave his flesh and Alexander, the leader of the resistance, to the Allspawn in return for a chance to continue his studies."
 #end
 
 -- Pretender Gods
@@ -899,7 +1067,7 @@
 #weapon 85
 #weapon 85
 #weapon 85
-#descr "The Allspawn is a creation of a biomancer named Lodum. It is an creature of organic and magic design that embraces all those that it touches. The Allspawn  "
+#descr "The Allspawn is a creation of a biomancer named Lodum. It is an creature of organic and magic design that embraces all those that it touches. The Allspawn spreads its influence by pumping spores into the air, and by infecting victims through its embrace. The Allspawn's essence is carried to the temples throughout Lodum. Those temples serve as meatfactories to process new, unwilling supplicants for the Allspawn. The creature is massive, terrifying, and immobile."
 #spreaddom 2
 #fear 5
 #awe 1
@@ -927,6 +1095,7 @@
 #homecom 2613
 #homecom 2606
 #end
+
 
 --Nation Building Time
 
@@ -965,7 +1134,7 @@ Heroes: Very strong"
 #addrecunit "Goomba"
 #addrecunit "Boomer"
 #addrecunit "Clattering Shambler"
-#addrecunit "Congealed Mass"
+-addrecunit "Congealed Mass"
 #addrecunit "Herald of the Allspawn"
 #addrecunit "Smokestack"
 #addreccom "Sentient Mass"
@@ -977,12 +1146,12 @@ Heroes: Very strong"
 #addreccom "Child of the Allspawn"
 
 -- Quick graphical/stats testing of heroes these should all be commented out in the released versions
--addreccom "Slug, Allspawn's Bride"
--addreccom "Alexander, Heir of Lodum"
--addreccom "Xitrum, Grand Hierophant"
--addreccom "Felix, Last of the Biomancers"
--addreccom "Jewel, Butcher of Women"
--addreccom "Phoenix, Slimedragon"
+-addreccom "Allspawn's Bride"
+-addreccom "Heir of Lodum"
+-addreccom "Grand Hierophant"
+-addreccom "Last of the Biomancers"
+-addreccom "Butcher of Women"
+-addreccom "Slimedragon"
 -addreccom "Meatfactory Monstrosity"
 
 -- Province Defense
@@ -1000,9 +1169,9 @@ Heroes: Very strong"
 
 -- Add heroes
 #hero1 2616 --"Slug, Allspawn's Bride"
--hero2 --"Alexander, Heir of Lodum"
+#hero2 2622 --"Alexander, Heir of Lodum"
 #hero3 2621 --"Xitrum, Grand Hierophant"
--hero4 --"Felix, Last of the Biomancers"
+#hero4 2623 --"Felix, Last of the Biomancers"
 #hero5 2620 --"Jewel, Butcher of Women"
 #hero6 2617 --"Phoenix, Slimedragon"
 #multihero1 2618 --"Meatfactory Monstrosity"
