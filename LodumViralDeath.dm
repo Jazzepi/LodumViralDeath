@@ -914,16 +914,18 @@
 #forestsurvival
 #healer 50
 #heal
+#amphibian
 #descr "The Lady of Springs is a divine being sprung from the spring of a mighty river. She claims dominion over the forest springs and everything living in them. While powerful in the paths of Water and Nature, her reclusive nature has limited her skills in other forms of magic. She can draw from the magic of all springs and gets two gems of Water magic each month, and is adept at healing."
 #end
 
 --Divine Serpent
 #newmonster 2702
-#2copystats 779
+#copystats 779
 #copyspr 779
 #restrictedgod 85
 #magicskill 6 4
-#gcost 25
+#gcost 0
+#awe 1
 #startdom 4
 #end
 
@@ -933,6 +935,7 @@
 #copyspr 657
 #restrictedgod 85
 #gemprod 6 2
+#gcost 50
 #descr "The Monolith is a powerful spirit inhabiting a huge standing stone. The spirit cannot leave the Monolith, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion and it is also magically powerful. In physical battle, the stone would be difficult to destroy, even though it cannot strike back. Each month, priests of the Spirit gather for ceremonies of the seasons, generating nature gems."
 #end
 
@@ -943,6 +946,8 @@
 #restrictedgod 85
 #gcost 75
 #domsummon2 466
+#itemslots 13446
+#spreaddom 2
 #end
 
 --Lord of Rebirth
