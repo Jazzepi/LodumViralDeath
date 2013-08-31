@@ -49,9 +49,9 @@
 #name "Injection Spike"
 #dmg 2
 #rcost 1
-#att 4
+#att 0
 #secondaryeffect 700
-#sound 14
+#sound 8
 #end
 
 #newweapon 702
@@ -59,7 +59,7 @@
 #dmg -4
 #rcost 0
 #att 2
-#sound 14
+#sound 96
 #end
 
 #newweapon 703
@@ -70,9 +70,11 @@
 #att 3
 #flyspr 404 3
 #explspr 10139
+#poison
 #nratt 10
 #range -1
 #ammo 1
+#sound 83
 #end
 
 #newweapon 704
@@ -243,6 +245,23 @@
 #aoe 4
 #end
 
+#newweapon 721
+#name "Plague Shot"
+#explspr 10103
+#dt_cap
+#armornegating
+#poison
+#dmg 1
+#nostr
+#range 40
+#aoe 4
+#ammo 99
+#flyspr 404 3
+#sound 14
+#explspr 10019
+#secondaryeffectalways 98
+#end
+
 -- Armor
 
 
@@ -326,7 +345,6 @@
 #mor 14
 #enc 2
 #magicbeing
-#neednoteat
 #poisonres 100
 #heal
 #fireres -25
@@ -343,7 +361,6 @@
 #mor 14
 #enc 2
 #magicbeing
-#neednoteat
 #poisonres 100
 #heal
 #fireres -25
@@ -414,7 +431,7 @@
 #size 1
 #hp 9
 #def 11
-#att 8
+#att 9
 #perc 10
 #descr "Goombas are small, vaguely humanoid creatures constructed from the body parts of fallen enemies.  They are stitched together en masse in the temples of the great Lodum and blessed with new life by an injection of organic matter from a priest's body. From this small injection spreads the terrible gift of the Allspawn. Goombas fight by overwhelming their opponents with sharp stabs of their injector spikes. They are nearly fearless being so possessed by the spirit of the Allspawn that they will fight to the last. As a matter of course, fallen Goombas are recovered from the battlefield only to be recycled back into more warriors for new legions in service to Lodum."
 #end
@@ -563,11 +580,13 @@
 
 #newmonster 2609
 #copystats 2500
-#copyspr 940
+#spr1 "./LodumViralDeath/child1.tga"
+#spr2 "./LodumViralDeath/child2.tga"
 #name "Child of the Allspawn"
 #goodmagicleader
 #hp 20
 #mr 17
+#weapon 322
 #gcost 345
 #holy
 #itemslots 13446
@@ -586,6 +605,7 @@
 #spr1 "./LodumViralDeath/slimeDippedNecromancer1.tga"
 #spr2 "./LodumViralDeath/slimeDippedNecromancer2.tga"
 #name "Slime Dipped Necromancer"
+#neednoteat
 #armor "Thick Slime"
 #gcost 150
 #mr 16
@@ -603,12 +623,14 @@
 #startage -1
 #maxage 1000
 #pooramphibian
+#mapmove 3
 #descr "Humans rarely service the Allspawn willingly. So when a cult of necromancers tried to study and subvert the power of the Allspawn, and they were discovered, their compliance to a new master was obtained through a lethal ritual. Dunked in a slime bath of the Allspawn's liquid excrement until drowned, the necromancers were then reawakened as undead, while still bearing the gift of the Allspawn. Now they have only one duty to the Allspawn; to make the dead, as well as the living, its servants."
 #end
 
 #newmonster 2611
 #copystats 2500
 #name "Cultivated Brain-Mass"
+#neednoteat
 #noleader
 #size 3
 #spr1 "./LodumViralDeath/cultivatedBrainMass1.tga"
@@ -619,6 +641,7 @@
 #weapon 346
 #att 6
 #magicskill 4 1
+#mapmove 3
 #noitem
 #descr "Humanoids submitted to the meat factories of Lodum often have their brains removed as the first step in processing.  This grey matter is collected in huge vats, and then mingled with crushed dust obtained by grinding down astral gems that naturally extrude from the Allspawn's many orifices. Once so prepared, the brain matter is placed into a cylindrical metal container about the size of a small humanoid. Two of the hollowed out meatlings that were not processed for parts are then assigned to the container, and cart it from battle to battle. Once so combined the thinking flesh of a hundred victims can cast minor astral spells and lash out at the minds of other living beings."
 #end
@@ -754,7 +777,8 @@
 
 #newmonster 2618
 #copystats 2500
-#copyspr 488
+#spr1 "./LodumViralDeath/meatfactoryMonstrosity1.tga"
+#spr2 "./LodumViralDeath/meatfactoryMonstrosity2.tga"
 #name "Meatfactory Monstrosity"
 #gcost 0
 #att 14
@@ -782,7 +806,7 @@
 #magicskill 6 1
 #magicskill 8 1
 #hp 14
-#weapon 7
+#weapon 706
 #str 12
 #att 8
 #def 8
@@ -899,6 +923,24 @@
 #goodmagicleader
 #mor 20
 #descr "Felix is the last survivor of a new cabal of earthbound biomancers. Their experiments focused on combining the durability of stone and steel with the natural regenerative properties of their organic monstrosity. The rise of the Allspawn interrupted their work, but Felix continues on after having made a grand bargin with the Allspawn. He gave his flesh and Alexander, the leader of the resistance, to the Allspawn in return for a chance to continue his studies."
+#end
+
+#newmonster 2624
+#copystats 2501
+#spr1 "./LodumViralDeath/plagueSpitter1.tga"
+#spr2 "./LodumViralDeath/plagueSpitter2.tga"
+#name "Plague Spitter"
+#hp 30
+#mapmove 1
+#weapon 90
+#weapon 721
+#str 12
+#att 8
+#def 8
+#prec 13
+#gcost 0
+#popkill 1
+#descr "Plague spitters consume members of the local populace and process their flesh into a deadly biological substance. The spitters rain down globules of the liquid disease into the enemy ranks where it spreads from soldier to solider. The liquid is filled with fine shards of bone and causes small lacerations upon impact even for the most well armored foe which helps the disease take root."
 #end
 
 -- Pretender Gods
@@ -1038,7 +1080,7 @@
 #weapon 707
 #shatteredsoul 3
 #descr "With the help of an enclave of necromancers Covus recently dominated the Allspawn. Its terrible taint has only begun to show. His fellow necromancers worry about his sanity as he struggles to keep a grip on reality while his essence touches that of the Allspawn's. He is an adept mage and can learn many paths of magic, though he is physically weak, and his battle to control the Allspawn has left his mental defenses lowered."
-#spreaddom 2
+#spreaddom 1
 #end
 
 --Allspawn, End of Evolution
@@ -1073,11 +1115,28 @@
 #weapon 85
 #weapon 85
 #descr "The Allspawn is a creation of a biomancer named Lodum. It is an creature of organic and magic design that embraces all those that it touches. The Allspawn spreads its influence by pumping spores into the air, and by infecting victims through its embrace. The Allspawn's essence is carried to the temples throughout Lodum. Those temples serve as meatfactories to process new, unwilling supplicants for the Allspawn. The creature is massive, terrifying, and immobile."
-#spreaddom 2
+#spreaddom 1
 #fear 5
 #awe 1
 #poisoncloud 15
 #maxage 10000
+#end
+
+-- Spells
+#newspell
+#name "Construct Plague Spitter"
+#descr "When Capiula was in its prime the biomancer's guild would craft organic beings to spread water and fertilizer over the fields. Those creatures have been repurposed to service Lodum, and sow plague amongst its enemies. Each one consumes small amounts of the local populace to create the toxic admixture it fires into the enemy ranks."
+#school 3
+#restricted 85
+#researchlevel 3
+#path 0 6
+#path 1 2
+#pathlevel 0 3
+#pathlevel 1 2
+#fatiguecost 800
+#effect 10001
+#damage 2624
+#nreff 1
 #end
 
 -- Start sites
@@ -1100,7 +1159,6 @@
 #homecom 2613
 #homecom 2606
 #end
-
 
 --Nation Building Time
 
