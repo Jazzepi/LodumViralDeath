@@ -4,8 +4,7 @@
 
 #icon "LodumViralDeath/lodumBanner.tga"
 
-#version 0.6
-
+#version 0.62
 
 -- Add the unique names for our heroes
 #selectnametype 151
@@ -81,6 +80,7 @@
 #name "Slimy Coating"
 #dmg 9
 #dt_poison
+#poison
 #secondaryeffectalways 329
 #end
 
@@ -403,18 +403,17 @@
 #blind
 #weapon 271
 #weapon 271
-#gcost 170
-#rcost 18
+#gcost 100
+#rcost 15
 #size 6
-#hp 35
+#hp 45
 #str 17
 #def 8
 #att 8
-#prec 10
 #mapmove 1
 #ap 8
-#poisoncloud 25
-#descr "Smokestacks were named by the first victims of the Allspawn, the Tarum. Those native lizards, now literally subsumed into the great body of the Allspawn, choked to death on the toxic fumes that poured forth from the Smokestack's single, hollow pillar of flesh. Smokestacks are grown by the Childern of the Allspawn and require rare ingredients from a number of plants, animals, and magical sources. This makes them both expensive and slow to produce. A single Smokestack can turn the tide of a battle, spreading a swath of poisonous decay that leaves the enemy breathless.  Despite their terrible power, Smokestacks are physically weak creatures with little ability for direct confrontation. When they do find themselves in combat, they fight with a set of thick, black tentacles that leech life from all those they touch."
+#poisoncloud 30
+#descr "Smokestacks were named by the first victims of the Allspawn, the Tarum. Those native lizards, now literally subsumed into the great body of the Allspawn, choked to death on the toxic fumes that poured forth from the Smokestack's single, hollow pillar of flesh. Smokestacks are grown by the Childern of the Allspawn and require rare ingredients from a number of plants, animals, and magical sources. This makes them both expensive and slow to produce. A single Smokestack can turn the tide of a battle, spreading a swath of poisonous decay that leaves the enemy breathless. Despite their terrible power, Smokestacks are physically weak creatures with little ability for direct confrontation. When they do find themselves in combat, they fight with a set of thick, black tentacles that leech life from all those they touch."
 #end
 
 #newmonster 2602
@@ -433,7 +432,7 @@
 #def 11
 #att 9
 #perc 10
-#descr "Goombas are small, vaguely humanoid creatures constructed from the body parts of fallen enemies.  They are stitched together en masse in the temples of the great Lodum and blessed with new life by an injection of organic matter from a priest's body. From this small injection spreads the terrible gift of the Allspawn. Goombas fight by overwhelming their opponents with sharp stabs of their injector spikes. They are nearly fearless being so possessed by the spirit of the Allspawn that they will fight to the last. As a matter of course, fallen Goombas are recovered from the battlefield only to be recycled back into more warriors for new legions in service to Lodum."
+#descr "Goombas are small, vaguely humanoid creatures constructed from the body parts of fallen enemies. They are stitched together en masse in the temples of the great Lodum and blessed with new life by an injection of organic matter from a priest's body. From this small injection spreads the terrible gift of the Allspawn. Goombas fight by overwhelming their opponents with sharp stabs of their injector spikes. They are nearly fearless being so possessed by the spirit of the Allspawn that they will fight to the last. As a matter of course, fallen Goombas are recovered from the battlefield only to be recycled back into more warriors for new legions in service to Lodum."
 #end
 
 #newmonster 2603
@@ -471,7 +470,7 @@
 #perc 10
 #mapmove 1
 #ap 11
-#descr "Congealed Masses are large blobs of animated organic material contained within a tough membrane.  They are created in the same fashion as the Sentient Masses, but given only rudimentary intelligence. The blobs move by rolling forward, and attack by biting with one of their many slavering maws. Due to their sheer size and slow movement, Congealed Masses are easy targets in melee. Despite this fact, their thick outer layer protects them from the brunt of most direct attacks and for this reason they can often be seen leading the charge into battle, recklessly throwing their huge forms into the ranks of terrified enemies."
+#descr "Congealed Masses are large blobs of animated organic material contained within a tough membrane. They are created in the same fashion as the Sentient Masses, but given only rudimentary intelligence. The blobs move by rolling forward, and attack by biting with one of their many slavering maws. Due to their sheer size and slow movement, Congealed Masses are easy targets in melee. Despite this fact, their thick outer layer protects them from the brunt of most direct attacks and for this reason they can often be seen leading the charge into battle, recklessly throwing their huge forms into the ranks of terrified enemies."
 #end
 
 #newmonster 2605
@@ -488,12 +487,12 @@
 #weapon 322
 #str 13
 #size 3
-#hp 15
+#hp 18
 #def 6
 #att 9
 #perc 12
 #ap 12
-#descr "Boomers can often be smelled before they are seen.  Members of the local populace are converted into boomers while still living. A tube is inserted into the throat, and the Allspawn's gift is fed to them until their stomachs burst. A lucky few die before their flesh begins to renew itself, but those who do not become Boomers. Large, lumbering, and filled to the brim with bile that distends their stomachs; Boomers fight by spewing forth the contents of their bellies. They shower the enemy in a thick coat of bile that eats away at their flesh and makes fighting difficult. The boomers then engage in meele where, if they are punctured by the enemy's weapon, poisonous streams of toxic goo spray forth injuring the attacker."
+#descr "Boomers can often be smelled before they are seen. Members of the local populace are converted into boomers while still living. A tube is inserted into the throat, and the Allspawn's gift is fed to them until their stomachs burst. A lucky few die before their flesh begins to renew itself, but those who do not become Boomers. Large, lumbering, and filled to the brim with bile that distends their stomachs; Boomers fight by spewing forth the contents of their bellies. They shower the enemy in a thick coat of bile that eats away at their flesh and makes fighting difficult. The boomers then engage in meele where, if they are punctured by the enemy's weapon, poisonous streams of toxic goo spray forth injuring the attacker."
 #end
 
 #newmonster 2606
@@ -502,7 +501,7 @@
 #spr2 "./LodumViralDeath/facelessLord2.tga"
 #name "Faceless Lord"
 #noleader
-#hp 70
+#hp 50
 #size 4
 #holy
 #mr 17
@@ -549,7 +548,7 @@
 #gcost 10
 #noleader
 #okmagicleader
-#descr "Lodum uses Sentient Masses to send the Allspawn's wishes far and wide. Sentient Masses are often the leftovers of Goomba factories created across the land of Lodum.  They receive and distribute the Allspawn's commands through a pair of antenna, leading the endless hordes of near mindless organic mobs to victory. Masses have no ability to defend themselves in a fight, and instead rely on bodyguards to keep enemies at bay."
+#descr "Lodum uses Sentient Masses to send the Allspawn's wishes far and wide. Sentient Masses are often the leftovers of Goomba factories created across the land of Lodum. They receive and distribute the Allspawn's commands through a pair of antenna, leading the endless hordes of near mindless organic mobs to victory. Masses have no ability to defend themselves in a fight, and instead rely on bodyguards to keep enemies at bay."
 #end
 
 #newmonster 2608
@@ -562,7 +561,7 @@
 #weapon 701
 #weapon 701
 #noleader
-#gcost 40
+#gcost 50
 #stealthy 30
 #assassin
 #mor 14
@@ -597,7 +596,7 @@
 #custommagic 12800 50
 #custommagic 2048 50
 #custommagic 2048 10
-#descr "Childern of the Allspawn are born when a female becomes infected with the Allspawn's gift and survives to term. The resulting child chews its way forth, consuming its mother from the inside out, before fleeing its place of birth and returning to the Allspawn to join its legions.  There are efforts within Lodum to add this process to the meat factories that produce its other troops, but they have met with limited, and expensive, success. The spores that Allspawn spreads into the air directly, belched forth day after day, continue to be the main progenitor behind the Children."
+#descr "Childern of the Allspawn are born when a female becomes infected with the Allspawn's gift and survives to term. The resulting child chews its way forth, consuming its mother from the inside out, before fleeing its place of birth and returning to the Allspawn to join its legions. There are efforts within Lodum to add this process to the meat factories that produce its other troops, but they have met with limited, and expensive, success. The spores that Allspawn spreads into the air directly, belched forth day after day, continue to be the main progenitor behind the Children."
 #end
 
 #newmonster 2610
@@ -643,7 +642,7 @@
 #magicskill 4 1
 #mapmove 3
 #noitem
-#descr "Humanoids submitted to the meat factories of Lodum often have their brains removed as the first step in processing.  This grey matter is collected in huge vats, and then mingled with crushed dust obtained by grinding down astral gems that naturally extrude from the Allspawn's many orifices. Once so prepared, the brain matter is placed into a cylindrical metal container about the size of a small humanoid. Two of the hollowed out meatlings that were not processed for parts are then assigned to the container, and cart it from battle to battle. Once so combined the thinking flesh of a hundred victims can cast minor astral spells and lash out at the minds of other living beings."
+#descr "Humanoids submitted to the meat factories of Lodum often have their brains removed as the first step in processing. This grey matter is collected in huge vats, and then mingled with crushed dust obtained by grinding down astral gems that naturally extrude from the Allspawn's many orifices. Once so prepared, the brain matter is placed into a cylindrical metal container about the size of a small humanoid. Two of the hollowed out meatlings that were not processed for parts are then assigned to the container, and cart it from battle to battle. Once so combined the thinking flesh of a hundred victims can cast minor astral spells and lash out at the minds of other living beings."
 #end
 
 #newmonster 2612
@@ -772,7 +771,7 @@
 #magicskill 5 3
 #itemslots 13446
 #noleader
-#descr "Phoenix T'ril"
+#descr "Once, the people of Capulia revered this formerly majestic creature as a God. Making his home near Capulia in a deep, cavernous lair, the dragon served at once as jealous protector of his worshippers, and capricious master of his servants. Capulia lived securely, if not always comfortably, under his rule. Regularly taking tithe from Capulia in riches and flesh, the powerful God-aspirant enjoyed many pleasures for years before the Allspawn threatened his domain. Eventually, after a terrible battle that devastated his lair and annihilated a significant fraction of the Allspawn's forces, the dragon was captured and subsumed. Recognizing his power, the Allspawn carefully infused the beast with its essence, and transformed him into a creature wielding a myriad of poisons and a thick exuded-slime armor atop his scales. Most importantly, the Allspawn erased his free will, but not his cunning and intellect; Phoenix is now a deadly foe, entrusted with the most critical strategic missions."
 #end
 
 #newmonster 2618
@@ -1042,12 +1041,12 @@
 #hp 40
 #str 26
 #mounted
-#gcost 40
+#gcost 35
 #size 5
 #mor 30
 #magicskill 4 3
 #magicskill 5 2
-#pathcost 25
+#pathcost 20
 #fear 0
 #mounted
 #entangle
@@ -1156,8 +1155,9 @@
 #rarity 5
 #gems 2 1
 #gems 6 1
-#homecom 2613
 #homecom 2606
+#homecom 2609
+#homecom 2613
 #end
 
 --Nation Building Time
@@ -1206,7 +1206,6 @@ Heroes: Very strong"
 #addreccom "Vile Stalker"
 #addreccom "Cultivated Brain-Mass"
 #addreccom "Slime Dipped Necromancer"
-#addreccom "Child of the Allspawn"
 
 -- Quick graphical/stats testing of heroes these should all be commented out in the released versions
 -addreccom "Allspawn's Bride"
@@ -1227,8 +1226,8 @@ Heroes: Very strong"
 
 #defmult1 30
 #defmult1b 10
-#defmult2 20
-#defmult2b 10
+#defmult2 10
+#defmult2b 20
 
 -- Add heroes
 #hero1 2616 --"Slug, Allspawn's Bride"
