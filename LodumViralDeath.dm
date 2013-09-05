@@ -4,7 +4,7 @@
 
 #icon "LodumViralDeath/lodumBanner.tga"
 
-#version 0.62
+#version 0.63
 
 -- Add the unique names for our heroes
 #selectnametype 151
