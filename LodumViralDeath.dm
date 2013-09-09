@@ -4,7 +4,7 @@
 
 #icon "LodumViralDeath/lodumBanner.tga"
 
-#version 0.63
+#version 0.64
 
 -- Add the unique names for our heroes
 #selectnametype 151
@@ -262,6 +262,12 @@
 #secondaryeffectalways 98
 #end
 
+#newweapon 722
+#name "Leg Swipe"
+#len 6
+#dmg -5
+#end
+
 -- Armor
 
 
@@ -413,7 +419,7 @@
 #mapmove 1
 #ap 8
 #poisoncloud 30
-#descr "Smokestacks were named by the first victims of the Allspawn, the Tarum. Those native lizards, now literally subsumed into the great body of the Allspawn, choked to death on the toxic fumes that poured forth from the Smokestack's single, hollow pillar of flesh. Smokestacks are grown by the Childern of the Allspawn and require rare ingredients from a number of plants, animals, and magical sources. This makes them both expensive and slow to produce. A single Smokestack can turn the tide of a battle, spreading a swath of poisonous decay that leaves the enemy breathless. Despite their terrible power, Smokestacks are physically weak creatures with little ability for direct confrontation. When they do find themselves in combat, they fight with a set of thick, black tentacles that leech life from all those they touch."
+#descr "Smokestacks were named by the first victims of the Allspawn, the Tarum. The Tarum's were Capulia's slave lizards and pressed into service as militia during the rise of the Allspawn, but like their human fellows they too choked to death on the toxic fumes that poured forth from the Smokestack's single, hollow pillar of flesh. Smokestacks are grown by the Childern of the Allspawn and require rare ingredients from a number of plants, animals, and magical sources. This makes them both expensive and slow to produce. A single Smokestack can turn the tide of a battle, spreading a swath of poisonous decay that leaves the enemy breathless. Despite their terrible power, Smokestacks are physically weak creatures with little ability for direct confrontation. When they do find themselves in combat, they fight with a set of thick, black tentacles that leech life from all those they touch."
 #end
 
 #newmonster 2602
@@ -534,9 +540,10 @@
 
 #newmonster 2607
 #copystats 2500
-#copyspr 169
-#name "Sentient Mass"
-#noitem
+#name "Mindspike"
+#itemslots 15366
+#spr1 "./LodumViralDeath/mindspike1.tga"
+#spr2 "./LodumViralDeath/mindspike2.tga"
 #hp 30
 #size 3
 #str 6
@@ -544,11 +551,12 @@
 #att 4
 #mr 12
 #ap 10
-#weapon 90
+#weapon 346
 #gcost 10
 #noleader
 #okmagicleader
-#descr "Lodum uses Sentient Masses to send the Allspawn's wishes far and wide. Sentient Masses are often the leftovers of Goomba factories created across the land of Lodum. They receive and distribute the Allspawn's commands through a pair of antenna, leading the endless hordes of near mindless organic mobs to victory. Masses have no ability to defend themselves in a fight, and instead rely on bodyguards to keep enemies at bay."
+#neednoteat
+#descr "Lodum uses Mindspikes to send the Allspawn's wishes far and wide. Mindspikes are the leftovers of meatfactories. They receive and distribute the Allspawn's commands through a single massive spike driven into their spines, leading the endless hordes of near mindless organic mobs to victory. Mindspikes have no ability to defend themselves in a fight, and instead rely on bodyguards to keep enemies at bay."
 #end
 
 #newmonster 2608
@@ -615,7 +623,6 @@
 #swampsurvival
 #mor 16
 #regeneration 30
-#neednoteat
 #poisonres 100
 #coldres 100
 #fireres -25
@@ -811,7 +818,7 @@
 #def 8
 #mr 13
 #gcost 40
-#poormagicleader
+#okmagicleader
 #mor 13
 #descr "The Allspawn cast down all but a select few of Capulia's old clerical sect. To replace them the Allspawn used shaman from the lizard slave caste of Capulia. Those that joined the Allspawn's legions as its new priests were embraced by the Allspawn. Those who refused were sent to Lodum's meat factories to join the growing ranks of the lobotomized thralls. The shamans that willingly joined the ranks of the Allspawn priesthood are known to their people only as betrayers whose names are forbidden to be spoken."
 #end
@@ -932,6 +939,7 @@
 #hp 30
 #mapmove 1
 #weapon 90
+#size 3
 #weapon 721
 #str 12
 #att 8
@@ -940,6 +948,26 @@
 #gcost 0
 #popkill 1
 #descr "Plague spitters consume members of the local populace and process their flesh into a deadly biological substance. The spitters rain down globules of the liquid disease into the enemy ranks where it spreads from soldier to solider. The liquid is filled with fine shards of bone and causes small lacerations upon impact even for the most well armored foe which helps the disease take root."
+#end
+
+#newmonster 2625
+#copystats 2500
+#spr1 "./LodumViralDeath/trivet1.tga"
+#spr2 "./LodumViralDeath/trivet2.tga"
+#diseasecloud 2
+#name "Trivet"
+#hp 24
+#mapmove 3
+#size 3
+#weapon 316
+#weapon 722
+#str 12
+#att 9
+#def 12
+#ap 30
+#rcost 7
+#gcost 25
+#descr "Trivets were once harmless spiders the Tarum kept as pets. They would eat smaller insects and keep the lizard people's simple dwellings clean while they went about their daily activities serving the people of Capulia as slaves. The Allspawn has repurposed them now, and their frail, milky white bodies can be seen on the sides of battle catching prey in venom laced webs."
 #end
 
 -- Pretender Gods
@@ -1168,7 +1196,7 @@
 #name "Lodum"
 #epithet "Viral Death"
 #era 3
-#startcom "Sentient Mass"
+#startcom "Mindspike"
 #startscout "Vile Stalker"
 #startunittype1 "Clattering Shambler"
 #startunittype2 "Goomba"
@@ -1197,10 +1225,11 @@ Heroes: Very strong"
 #addrecunit "Goomba"
 #addrecunit "Boomer"
 #addrecunit "Clattering Shambler"
+#addrecunit "Trivet"
 -addrecunit "Congealed Mass"
 #addrecunit "Herald of the Allspawn"
 #addrecunit "Smokestack"
-#addreccom "Sentient Mass"
+#addreccom "Mindspike"
 #addreccom "Conduit"
 #addreccom "Shaman Betrayer"
 #addreccom "Vile Stalker"
@@ -1221,7 +1250,7 @@ Heroes: Very strong"
 #defcom2 "Child of the Allspawn"
 #defunit1 "Lobotomized Thrall"
 #defunit1b "Boomer"
-#defunit2 "Goomba"
+#defunit2 "Trivet"
 #defunit2b "Clattering Shambler"
 
 #defmult1 30
