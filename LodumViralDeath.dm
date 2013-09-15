@@ -4,38 +4,8 @@
 
 #icon "LodumViralDeath/lodumBanner.tga"
 
-#version 0.7
+#version 0.71
 
--- Add the unique names for our heroes
-#selectnametype 161
-#clear
-#addname "Slug"
-#end
-
-#selectnametype 162
-#clear
-#addname "Phoenix T'ril"
-#end
-
-#selectnametype 163
-#clear
-#addname "Jewel"
-#end
-
-#selectnametype 164
-#clear
-#addname "Xitrum"
-#end
-
-#selectnametype 165
-#clear
-#addname "Alexander"
-#end
-
-#selectnametype 166
-#clear
-#addname "Felix"
-#end
 
 -- Weapons
 #newweapon 700
@@ -760,7 +730,7 @@
 #spr1 "./LodumViralDeath/slug1.tga"
 #spr2 "./LodumViralDeath/slug2.tga"
 #name "Allspawn's Bride"
-#nametype 161
+#fixedname "Slug"
 #gcost 0
 #att 14
 #blind
@@ -791,7 +761,7 @@
 #spr1 "./LodumViralDeath/phoenix1.tga"
 #spr2 "./LodumViralDeath/phoenix2.tga"
 #name "Slimedragon"
-#nametype 162
+#fixedname "Phoenix T'ril"
 #bonusspells 1
 #gcost 0
 #flying
@@ -864,7 +834,7 @@
 #spr1 "./LodumViralDeath/jewel1.tga"
 #spr2 "./LodumViralDeath/jewel2.tga"
 #name "Butcher of Women"
-#nametype 163
+#fixedname "Jewel"
 #onebattlespell "Wailing Winds"
 #female
 #fear 5
@@ -890,7 +860,7 @@
 #spr1 "./LodumViralDeath/xitrum1.tga"
 #spr2 "./LodumViralDeath/xitrum2.tga"
 #name "Grand Hierophant"
-#nametype 164
+#fixedname "Xitrum"
 #magicskill 8 5
 #hp 23
 #weapon 85
@@ -922,7 +892,7 @@
 #spr1 "./LodumViralDeath/alexander1.tga"
 #spr2 "./LodumViralDeath/alexander2.tga"
 #name "Heir of Lodum"
-#nametype 165
+#fixedname "Alexander"
 #magicskill 0 3
 #magicskill 2 3
 #hp 25
@@ -949,7 +919,7 @@
 #spr1 "./LodumViralDeath/felix1.tga"
 #spr2 "./LodumViralDeath/felix2.tga"
 #name "Last of the Biomancers"
-#nametype 166
+#fixedname "Felix"
 #magicskill 3 3
 #magicskill 5 3
 #magicskill 6 3
@@ -1240,7 +1210,7 @@
 #end
 
 -- Start sites
-#newsite 890
+#newsite 1749
 #name "Putrid Pit of Filth"
 #path 5
 #level 0
@@ -1250,7 +1220,7 @@
 #homemon 3600
 #end
 
-#newsite 891
+#newsite 1748
 #name "Spawning Pool"
 #path 0
 #level 0

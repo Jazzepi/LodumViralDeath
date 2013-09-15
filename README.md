@@ -1,7 +1,7 @@
 LodumViralDeath
 ===============
 
-Version .7
+Version .71
 
 A mod nation for Dominions 4: Thrones of Ascension
 
