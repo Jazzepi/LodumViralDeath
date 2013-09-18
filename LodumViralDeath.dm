@@ -381,6 +381,12 @@
 #name "Slime Ball"
 #blind
 #trample
+#hpoverflow
+#pierceres
+#bluntres
+#slimer 0
+#trampswallow
+#incorporate 5
 #weapon 90
 #holy
 #gcost 140
@@ -393,7 +399,7 @@
 #def 6
 #prec 10
 #mapmove 3
-#ap 16
+#ap 12
 #descr "Slime Balls are crafted directly by the Allspawn in cavities located throughout its body. At any one time up to a dozen Slime Balls may be growing inside of the massive Allspawn. To produce these green, gooey masses of death the Allspawn consumes fresh organic matter. After digestion, it then compresses that flesh down into a hollow cavity roughly the size of a large chariot. After several days of adding new material, the Allspawn implants a small bit of its essence into the ball which gives it the spark of life it needs to move. Finally, the Allspawn regurgitates it onto land. From there it joins the endless hordes of Lodum."
 #ainorec
 #end
