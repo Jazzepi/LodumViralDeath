@@ -4,7 +4,7 @@
 
 #icon "LodumViralDeath/lodumBanner.tga"
 
-#version 0.71
+#version 0.72
 
 
 -- Weapons
@@ -344,6 +344,7 @@
 
 #newmonster 3600
 #name "Default Amphibian Template"
+#nametype 161
 #swampsurvival
 #mor 14
 #enc 2
@@ -360,6 +361,7 @@
 
 #newmonster 3601
 #name "Default Non-amphibian Template"
+#nametype 161
 #swampsurvival
 #mor 14
 #enc 2
@@ -619,6 +621,7 @@
 #spr1 "./LodumViralDeath/slimeDippedNecromancer1.tga"
 #spr2 "./LodumViralDeath/slimeDippedNecromancer2.tga"
 #name "Slime Dipped Necromancer"
+#nametype 105
 #neednoteat
 #armor "Thick Slime"
 #gcost 150
@@ -1131,7 +1134,7 @@
 #hp 18
 #str 7
 #mor 30
-#gcost 30
+#gcost 50
 #mr 14
 #magicskill 4 2
 #magicskill 5 1
@@ -1334,4 +1337,69 @@ Heroes: Very strong"
 --Set what forts they will use.
 #fortera 3
 
+--Names
+#selectnametype 161
+#clear
+#addname "Adenoma"
+#addname "Alveol"
+#addname "Ascarias"
+#addname "Astrocytoma"
+#addname "Babesia"
+#addname "Babesois"
+#addname "Blastoma"
+#addname "Brucella"
+#addname "Chikungunya"
+#addname "Conidia"
+#addname "Coxiella"
+#addname "Cryptoco"
+#addname "Demoplaz"
+#addname "Dendrite"
+#addname "Dipthria"
+#addname "Ebella"
+#addname "Ehrlichia"
+#addname "Ehrlichiosis"
+#addname "Ependies"
+#addname "Ependymoma"
+#addname "Fasciola"
+#addname "Geotrichum"
+#addname "Glioma"
+#addname "Gnathost"
+#addname "Guanarito"
+#addname "Gutrot"
+#addname "Histiocyte"
+#addname "Histiocytoma"
+#addname "Histiocytosis"
+#addname "Kellus"
+#addname "Klebsiella"
+#addname "Kuru"
+#addname "Macrophage"
+#addname "Makro"
+#addname "Malassezia"
+#addname "Medulloma"
+#addname "Metastase"
+#addname "Myeloid"
+#addname "Neoplasia"
+#addname "Neuroendocrine"
+#addname "Nocardia"
+#addname "Osteclast"
+#addname "Osteosarcoma"
+#addname "Palatal"
+#addname "Papillo"
+#addname "Pediculus"
+#addname "Phagocyte"
+#addname "Pharyn"
+#addname "Psittaci"
+#addname "Rhabdom"
+#addname "Rickett"
+#addname "Sarcoma"
+#addname "Schito"
+#addname "Squamous"
+#addname "Staphyl"
+#addname "Strepto"
+#addname "Tiphus"
+#addname "Toxocara"
+#addname "Toxoplaz"
+#addname "Trichomoniasis"
+#addname "Vestibulodynia"
+#addname "Zygomycosis"
 #end
